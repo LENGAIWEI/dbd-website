@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>屠夫图鉴 | 黎明杀机资料库</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-box">
+            <a href="index.html" class="logo">黎明杀机资料库</a>
+            <div class="nav-right">
+                <nav class="nav-menu">
+                    <a href="index.html">首页</a>
+                    <a href="survivors.html">逃生者</a>
+                    <a href="killers.html" class="active">屠夫</a>
+                    <a href="perks.html">技能图鉴</a>
+                    <a href="maps.html">地图大全</a>
+                </nav>
+                <input type="text" id="headerSearch" class="header-search-input" placeholder="站内搜索…" autocomplete="off">
+            </div>
+        </div>
+        <div class="search-result-bar" id="headerSearchResult"></div>
+    </header>
+
+    <main class="container">
+        <h2 class="page-title">屠夫图鉴</h2>
+        <p>所有杀手角色信息，含背景故事、专属技能与实战定位。</p>
+
+        <!-- 筛选栏 -->
+        <div class="filter-bar" id="filterBar">
+            <span class="filter-label">阵营：</span>
+            <button class="filter-chip active" data-filter="faction" data-value="全部">全部</button>
+            <button class="filter-chip" data-filter="faction" data-value="原创">原创</button>
+            <button class="filter-chip" data-filter="faction" data-value="授权">授权</button>
+            <span class="filter-sep"></span>
+            <span class="filter-label">定位：</span>
+            <button class="filter-chip active" data-filter="role" data-value="全部">全部</button>
+            <button class="filter-chip" data-filter="role" data-value="陷阱">陷阱</button>
+            <button class="filter-chip" data-filter="role" data-value="潜行">潜行</button>
+            <button class="filter-chip" data-filter="role" data-value="突进">突进</button>
+            <button class="filter-chip" data-filter="role" data-value="远程">远程</button>
+            <button class="filter-chip" data-filter="role" data-value="压制">压制</button>
+            <button class="filter-chip" data-filter="role" data-value="控制">控制</button>
+            <button class="filter-chip" data-filter="role" data-value="传送">传送</button>
+        </div>
+
+        <div class="card-grid">
+            <div class="card char-card" data-faction="原创" data-role="陷阱">
+                <img class="card-img" src="./images/portraits/设陷者.png" alt="陷阱杀手">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">陷阱</span>
+                    </div>
+                    <h3>陷阱杀手 <small>The Trapper</small></h3>
+                    <p class="char-desc">埃文·麦克米兰，为继承家业不惜弑父的矿场主，用捕熊夹守护他的领地。</p>
+                    <p class="char-perks"><span>专属技能</span>恐慌降临 · 所向无敌 · 欣喜若狂</p>
+                    <p class="char-tip">💡 经典守尸流，捕熊夹封锁关键点位。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="潜行">
+                <img class="card-img" src="./images/portraits/幽灵杀手.png" alt="幽灵杀手">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">潜行</span>
+                    </div>
+                    <h3>幽灵杀手 <small>The Wraith</small></h3>
+                    <p class="char-desc">菲利普·奥朱莫，被雇主谋害的移民工人，化作幽灵在雾中猎杀。</p>
+                    <p class="char-perks"><span>专属技能</span>穷追不舍 · 血气追踪 · 暗夜之睛</p>
+                    <p class="char-tip">💡 隐身接近、显形突袭，新手友好型屠夫。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="突进">
+                <img class="card-img" src="./images/portraits/电锯杀手.png" alt="电锯杀手">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">突进</span>
+                    </div>
+                    <h3>电锯杀手 <small>The Hillbilly</small></h3>
+                    <p class="char-desc">畸形农场少年，被家人囚禁虐待，用电锯将愤怒倾泻而出。</p>
+                    <p class="char-perks"><span>专属技能</span>耐力持久 · 光明之眼 · 工匠</p>
+                    <p class="char-tip">💡 电锯冲锋横扫全场，机动与压迫兼具。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="突进">
+                <img class="card-img" src="./images/portraits/护士.png" alt="护士">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">突进</span>
+                    </div>
+                    <h3>护士 <small>The Nurse</small></h3>
+                    <p class="char-desc">精神病院的护士莎莉·史密森，失去一切后陷入疯狂，能穿透现实束缚。</p>
+                    <p class="char-perks"><span>专属技能</span>鸣喘感知 · 护士的呼唤 · 死亡恐惧</p>
+                    <p class="char-tip">💡 瞬移无视地形，高手向天花板屠夫。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="授权" data-role="潜行">
+                <img class="card-img" src="./images/portraits/迈克尔·迈尔斯.png" alt="迈克尔·迈尔斯">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">授权</span>
+                        <span class="tag tag-role">潜行</span>
+                    </div>
+                    <h3>形状 / 迈克尔·迈尔斯 <small>The Shape</small></h3>
+                    <p class="char-desc">来自《万圣节》的沉默杀手，无声地凝视并积蓄杀意。</p>
+                    <p class="char-perks"><span>专属技能</span>湮灭之光 · 把最好的留在最后 · 不要玩食物</p>
+                    <p class="char-tip">💡 蓄力升级一击必杀，压迫感十足。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="陷阱">
+                <img class="card-img" src="./images/portraits/妖巫.png" alt="女巫">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">陷阱</span>
+                    </div>
+                    <h3>女巫 <small>The Hag</small></h3>
+                    <p class="char-desc">沼泽中的女巫，用泥土与鲜血布下诅咒陷阱。</p>
+                    <p class="char-perks"><span>专属技能</span>厄咒：第三封印 · 厄咒：毁灭 · 厄咒：吞噬希望</p>
+                    <p class="char-tip">💡 陷阱传送奇袭，厄咒控场。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="压制">
+                <img class="card-img" src="./images/portraits/医生.png" alt="医生">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">压制</span>
+                    </div>
+                    <h3>医生 <small>The Doctor</small></h3>
+                    <p class="char-desc">疯狂的"医生"赫尔曼·卡特，用电击"治疗"病人，制造恐惧。</p>
+                    <p class="char-perks"><span>专属技能</span>压迫性气场 · 行监坐守 · 电量超载</p>
+                    <p class="char-tip">💡 电击干扰修机，信息与压制兼备。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="远程">
+                <img class="card-img" src="./images/portraits/女猎手.png" alt="女猎手">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">远程</span>
+                    </div>
+                    <h3>女猎手 <small>The Huntress</small></h3>
+                    <p class="char-desc">森林中的猎手安娜，用飞斧取人性命，哼着童谣游荡。</p>
+                    <p class="char-perks"><span>专属技能</span>厄咒：猎手摇篮曲 · 领地意识 · 嗜血凶兽</p>
+                    <p class="char-tip">💡 飞斧远程压制，投掷高手的最爱。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="授权" data-role="突进">
+                <img class="card-img" src="./images/portraits/食人魔.png" alt="食人魔">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">授权</span>
+                        <span class="tag tag-role">突进</span>
+                    </div>
+                    <h3>食人魔 / 人皮脸 <small>The Cannibal</small></h3>
+                    <p class="char-desc">来自《德州电锯杀人狂》的人皮脸，挥舞电锯的恐怖屠夫。</p>
+                    <p class="char-perks"><span>专属技能</span>人肉烧烤 · 击倒出局 · 富兰克林之死</p>
+                    <p class="char-tip">💡 电锯横扫守尸极强，新手冲段利器。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="授权" data-role="潜行">
+                <img class="card-img" src="./images/portraits/梦魇.png" alt="梦魇">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">授权</span>
+                        <span class="tag tag-role">潜行</span>
+                    </div>
+                    <h3>梦魇 / 弗莱迪 <small>The Nightmare</small></h3>
+                    <p class="char-desc">来自《猛鬼街》的弗莱迪·克鲁格，入侵梦境制造恐惧。</p>
+                    <p class="char-perks"><span>专属技能</span>记忆犹新 · 怒火中烧 · 血腥狱长</p>
+                    <p class="char-tip">💡 梦境穿梭+开门战封锁，拖延专家。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="授权" data-role="潜行">
+                <img class="card-img" src="./images/portraits/门徒.png" alt="门徒">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">授权</span>
+                        <span class="tag tag-role">潜行</span>
+                    </div>
+                    <h3>门徒 / 猪妹 <small>The Pig</small></h3>
+                    <p class="char-desc">来自《电锯惊魂》的拼图继承者，用机关考验人性。</p>
+                    <p class="char-perks"><span>专属技能</span>做出你的选择 · 了如指掌 · 侩子手的把戏</p>
+                    <p class="char-tip">💡 头套机关拖延节奏，潜行突袭。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="远程">
+                <img class="card-img" src="./images/portraits/小丑.png" alt="小丑">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">远程</span>
+                    </div>
+                    <h3>小丑 <small>The Clown</small></h3>
+                    <p class="char-desc">沉迷药物的马戏团小丑，用毒雾让人窒息。</p>
+                    <p class="char-perks"><span>专属技能</span>心惊肉跳 · 小丑恐惧症 · 花言巧语</p>
+                    <p class="char-tip">💡 毒雾减速封锁走位，控场型杀手。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="突进">
+                <img class="card-img" src="./images/portraits/怨灵.png" alt="怨灵">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">突进</span>
+                    </div>
+                    <h3>怨灵 <small>The Spirit</small></h3>
+                    <p class="char-desc">被父亲杀害的少女灵魂，怨念化作穿梭虚实的力量。</p>
+                    <p class="char-perks"><span>专属技能</span>怨气冲天 · 厄咒：闹鬼之地 · 暴怒怨灵</p>
+                    <p class="char-tip">💡 相位穿梭虚实难辨，心理博弈大师。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="突进">
+                <img class="card-img" src="./images/portraits/军团.png" alt="军团">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">突进</span>
+                    </div>
+                    <h3>军团 <small>The Legion</small></h3>
+                    <p class="char-desc">一群叛逆少年组成的杀人团伙，以疯狂与速度见长。</p>
+                    <p class="char-perks"><span>专属技能</span>疯狂勇气 · 铁处女 · 配合失谐</p>
+                    <p class="char-tip">💡 群体致残+高速追击，残血流代表。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="远程">
+                <img class="card-img" src="./images/portraits/瘟疫.png" alt="瘟疫">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">远程</span>
+                    </div>
+                    <h3>瘟疫 <small>The Plague</small></h3>
+                    <p class="char-desc">被瘟疫吞噬的古巴比伦祭司，用疾病惩戒世人。</p>
+                    <p class="char-perks"><span>专属技能</span>腐烂干预 · 黑暗奉献 · 恐惧传染</p>
+                    <p class="char-tip">💡 感染全场+远程喷吐，压制节奏。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="授权" data-role="潜行">
+                <img class="card-img" src="./images/portraits/鬼面.png" alt="鬼面">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">授权</span>
+                        <span class="tag tag-role">潜行</span>
+                    </div>
+                    <h3>鬼面 <small>The Ghost Face</small></h3>
+                    <p class="char-desc">来自《惊声尖叫》的面具杀手，擅长潜伏与偷袭。</p>
+                    <p class="char-perks"><span>专属技能</span>惊险战栗 · 洗耳恭听 · 鬼祟追杀</p>
+                    <p class="char-tip">💡 潜行偷袭+信息追踪，暗杀流。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="突进">
+                <img class="card-img" src="./images/portraits/鬼武士.png" alt="鬼武士">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">突进</span>
+                    </div>
+                    <h3>鬼武士 <small>The Oni</small></h3>
+                    <p class="char-desc">堕落武士山冈，吸食鲜血化为狂暴恶魔。</p>
+                    <p class="char-perks"><span>专属技能</span>鲜血回响 · 报应 · 残心</p>
+                    <p class="char-tip">💡 吸血红怒爆发，正面碾压。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="远程">
+                <img class="card-img" src="./images/portraits/死亡枪手.png" alt="死亡枪手">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">远程</span>
+                    </div>
+                    <h3>死亡枪手 <small>The Deathslinger</small></h3>
+                    <p class="char-desc">西部时代的赏金猎人，用鱼叉与步枪狩猎目标。</p>
+                    <p class="char-perks"><span>专属技能</span>失效开关 · 设备发烧友 · 厄咒：惩戒</p>
+                    <p class="char-tip">💡 鱼叉钩人拉回，远程处决。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="授权" data-role="压制">
+                <img class="card-img" src="./images/portraits/处刑者.png" alt="处刑者">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">授权</span>
+                        <span class="tag tag-role">压制</span>
+                    </div>
+                    <h3>处刑者 / 三角头 <small>The Executioner</small></h3>
+                    <p class="char-desc">来自《寂静岭》的三角头，用巨刃与铁笼执行审判。</p>
+                    <p class="char-perks"><span>专属技能</span>死亡羁绊 · 强制忏悔 · 折磨路径</p>
+                    <p class="char-tip">💡 地形封锁+笼子处决，压迫感极强。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="突进">
+                <img class="card-img" src="./images/portraits/枯萎者.png" alt="枯萎者">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">突进</span>
+                    </div>
+                    <h3>枯萎者 <small>The Blight</small></h3>
+                    <p class="char-desc">追求永生的炼金术士，注射血清后化为狂暴怪物。</p>
+                    <p class="char-perks"><span>专属技能</span>巨龙之握 · 厄咒：鲜血恩惠 · 厄咒：不死</p>
+                    <p class="char-tip">💡 高速冲撞追击，机动性极强。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="控制">
+                <img class="card-img" src="./images/portraits/双子.png" alt="双子">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">控制</span>
+                    </div>
+                    <h3>双子 <small>The Twins</small></h3>
+                    <p class="char-desc">连体双胞胎中的哥哥，背负妹妹共同狩猎。</p>
+                    <p class="char-perks"><span>专属技能</span>切肤之痛 · 囤积者 · 恩赐解脱</p>
+                    <p class="char-tip">💡 双人切换多线控制，防不胜防。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="远程">
+                <img class="card-img" src="./images/portraits/骗术师.png" alt="骗术师">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">远程</span>
+                    </div>
+                    <h3>骗术师 <small>The Trickster</small></h3>
+                    <p class="char-desc">以表演为名的连环杀手，用飞刀谱写死亡乐章。</p>
+                    <p class="char-perks"><span>专属技能</span>厄咒：群体控制 · 无路可逃 · 追星狂</p>
+                    <p class="char-tip">💡 飞刀连击远程收割，中距离压制。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="授权" data-role="压制">
+                <img class="card-img" src="./images/portraits/追击者.png" alt="追击者">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">授权</span>
+                        <span class="tag tag-role">压制</span>
+                    </div>
+                    <h3>追击者 / 复仇女神 <small>The Nemesis</small></h3>
+                    <p class="char-desc">来自《生化危机》的生化兵器，追杀S.T.A.R.S.的恐怖存在。</p>
+                    <p class="char-perks"><span>专属技能</span>歇斯底里 · 爆发 · 致命追踪者</p>
+                    <p class="char-tip">💡 触手远攻+丧尸干扰，压迫追猎。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="授权" data-role="控制">
+                <img class="card-img" src="./images/portraits/地狱修士.png" alt="地狱修士">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">授权</span>
+                        <span class="tag tag-role">控制</span>
+                    </div>
+                    <h3>地狱修士 / 钉子头 <small>The Cenobite</small></h3>
+                    <p class="char-desc">来自《养鬼吃人》的钉子头，用锁链与痛苦取悦地狱。</p>
+                    <p class="char-perks"><span>专属技能</span>厄咒：玩物 · 天灾钩子：痛苦礼物 · 死锁</p>
+                    <p class="char-tip">💡 锁链锁机拖节奏，痛苦折磨。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="远程">
+                <img class="card-img" src="./images/portraits/艺术家.png" alt="艺术家">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">远程</span>
+                    </div>
+                    <h3>艺术家 <small>The Artist</small></h3>
+                    <p class="char-desc">失去双手的画家卡米娜，用鸦群宣泄痛苦与才华。</p>
+                    <p class="char-perks"><span>专属技能</span>冷酷之拥 · 厄咒：余痕 · 天灾钩子：痛苦共鸣</p>
+                    <p class="char-tip">💡 鸦群标记远程压制，信息流。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="授权" data-role="潜行">
+                <img class="card-img" src="./images/portraits/贞子.png" alt="贞子">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">授权</span>
+                        <span class="tag tag-role">潜行</span>
+                    </div>
+                    <h3>贞子 <small>The Onryō</small></h3>
+                    <p class="char-desc">来自《午夜凶铃》的贞子，通过录像带诅咒蔓延。</p>
+                    <p class="char-perks"><span>专属技能</span>天灾钩子：狂怒之潮 · 无情风暴 · 盐水召唤</p>
+                    <p class="char-tip">💡 电视传送+诅咒蔓延，灵异压迫。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="传送">
+                <img class="card-img" src="./images/portraits/影魔.png" alt="影魔">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">传送</span>
+                    </div>
+                    <h3>影魔 / 深渊之主 <small>The Dredge</small></h3>
+                    <p class="char-desc">由黑暗与恐惧凝聚的深渊怪物，在夜幕中出没。</p>
+                    <p class="char-perks"><span>专属技能</span>感染之触 · 烟消云散 · 黑暗启迪</p>
+                    <p class="char-tip">💡 夜幕降临+储物柜传送，黑暗中猎杀。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="授权" data-role="突进">
+                <img class="card-img" src="./images/portraits/操纵者.png" alt="操纵者">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">授权</span>
+                        <span class="tag tag-role">突进</span>
+                    </div>
+                    <h3>操纵者 / 威斯克 <small>The Mastermind</small></h3>
+                    <p class="char-desc">来自《生化危机》的阿尔伯特·威斯克，进化成超人类。</p>
+                    <p class="char-perks"><span>专属技能</span>感知觉醒 · 终局战术 · 超人类体能</p>
+                    <p class="char-tip">💡 病毒加速+突进，全能型强者。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="压制">
+                <img class="card-img" src="./images/portraits/恶骑士.png" alt="恶骑士">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">压制</span>
+                    </div>
+                    <h3>恶骑士 <small>The Knight</small></h3>
+                    <p class="char-desc">中世纪的堕落骑士塔霍斯，召唤亡灵卫队作战。</p>
+                    <p class="char-perks"><span>专属技能</span>厄咒：直面黑暗 · 无处可藏 · 骄傲自大</p>
+                    <p class="char-tip">💡 召唤卫队巡逻，多线施压。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="压制">
+                <img class="card-img" src="./images/portraits/白骨商人.png" alt="白骨商人">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">压制</span>
+                    </div>
+                    <h3>白骨商人 / 骷髅商人 <small>The Skull Merchant</small></h3>
+                    <p class="char-desc">用无人机与科技猎杀猎物的商人，冷血精于算计。</p>
+                    <p class="char-perks"><span>专属技能</span>哐哐作响 · 好戏开场 · 杠杆效应</p>
+                    <p class="char-tip">💡 无人机监控全场，信息压制。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="传送">
+                <img class="card-img" src="./images/portraits/奇点.png" alt="奇点">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">传送</span>
+                    </div>
+                    <h3>奇点 <small>The Singularity</small></h3>
+                    <p class="char-desc">失控的AI生物体，通过生物质传送追杀目标。</p>
+                    <p class="char-perks"><span>专属技能</span>基因锁 · 机器学习 · 踯躅不前</p>
+                    <p class="char-tip">💡 传送突袭+修机干扰，科技压制。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="授权" data-role="潜行">
+                <img class="card-img" src="./images/portraits/异形.png" alt="异形">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">授权</span>
+                        <span class="tag tag-role">潜行</span>
+                    </div>
+                    <h3>异形 <small>The Xenomorph</small></h3>
+                    <p class="char-desc">来自《异形》的完美猎杀者，在黑暗中无声接近猎物。</p>
+                    <p class="char-perks"><span>专属技能</span>异形本能 · 疾速残暴 · 终极武器</p>
+                    <p class="char-tip">💡 地道穿梭+尾刺突袭，潜行猎手。</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        本网站为爱好者学习制作，黎明杀机版权归 Behaviour Interactive 所有
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img class="lightbox-img" id="lightboxImg" src="" alt="图片预览">
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>

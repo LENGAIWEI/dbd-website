@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黎明杀机资料库 | DBD 图鉴</title>
+    <!-- 引入全局样式 -->
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .entry-card {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        .entry-card:hover {
+            transform: translateY(-5px);
+        }
+        .entry-card .card {
+            height: 100%;
+        }
+        .entry-collage {
+            height: 180px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 2px;
+            background: #0a0a0a;
+            border-radius: 6px 6px 0 0;
+            overflow: hidden;
+        }
+        .entry-collage img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+            background: #111;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+        .entry-collage img.contain {
+            object-fit: contain;
+            object-position: center;
+            padding: 14px;
+        }
+        .entry-card:hover .entry-collage img {
+            transform: scale(1.06);
+        }
+        .entry-card .card-content {
+            padding: 20px;
+        }
+        .entry-card h3 {
+            margin-bottom: 10px;
+            color: #e0e0e0;
+        }
+        .entry-card p {
+            color: #999;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header>
+        <div class="nav-box">
+            <a href="index.html" class="logo">黎明杀机资料库</a>
+            <div class="nav-right">
+                <nav class="nav-menu">
+                    <a href="index.html" class="active">首页</a>
+                    <a href="survivors.html">逃生者</a>
+                    <a href="killers.html">屠夫</a>
+                    <a href="perks.html">技能图鉴</a>
+                    <a href="maps.html">地图大全</a>
+                </nav>
+                <input type="text" id="headerSearch" class="header-search-input" placeholder="站内搜索…" autocomplete="off">
+            </div>
+        </div>
+        <div class="search-result-bar" id="headerSearchResult"></div>
+    </header>
+
+    <!-- 主体内容 -->
+    <main class="container">
+        <h2 class="page-title">欢迎来到黎明杀机资料库</h2>
+        <p>本网站收录逃生者、屠夫、全技能、地图点位详细资料，持续更新中。</p>
+
+        <!-- 入口卡片区 -->
+        <div class="card-grid">
+            <a href="survivors.html" class="entry-card">
+                <div class="card">
+                    <div class="entry-collage">
+                        <img src="./images/portraits/德怀特·费菲尔德.png" alt="逃生者图鉴">
+                        <img src="./images/portraits/梅格·托马斯.png" alt="逃生者图鉴">
+                        <img src="./images/portraits/克劳黛特·莫莱.png" alt="逃生者图鉴">
+                        <img src="./images/portraits/杰克·帕克.png" alt="逃生者图鉴">
+                    </div>
+                    <div class="card-content">
+                        <h3>逃生者图鉴</h3>
+                        <p>全部幸存者角色、背景故事与专属技能</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="killers.html" class="entry-card">
+                <div class="card">
+                    <div class="entry-collage">
+                        <img src="./images/portraits/设陷者.png" alt="屠夫图鉴">
+                        <img src="./images/portraits/幽灵杀手.png" alt="屠夫图鉴">
+                        <img src="./images/portraits/电锯杀手.png" alt="屠夫图鉴">
+                        <img src="./images/portraits/护士.png" alt="屠夫图鉴">
+                    </div>
+                    <div class="card-content">
+                        <h3>屠夫图鉴</h3>
+                        <p>所有杀手能力、配件搭配与玩法解析</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="perks.html" class="entry-card">
+                <div class="card">
+                    <div class="entry-collage">
+                        <img class="contain" src="./images/Dwight Fairfield - Bond.png" alt="技能图鉴">
+                        <img class="contain" src="./images/克劳黛特 - 自我疗愈.png" alt="技能图鉴">
+                        <img class="contain" src="./images/托马斯 - 冲刺爆发.png" alt="技能图鉴">
+                        <img class="contain" src="./images/托马斯 - 肾上腺素.png" alt="技能图鉴">
+                    </div>
+                    <div class="card-content">
+                        <h3>技能图鉴</h3>
+                        <p>人类/屠夫全技能效果与实战评级</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="maps.html" class="entry-card">
+                <div class="card">
+                    <div class="entry-collage">
+                        <img src="./images/乌鸦巢穴.png" alt="地图大全">
+                        <img src="./images/掩护林1.png" alt="地图大全">
+                        <img src="./images/煤矿废塔.png" alt="地图大全">
+                        <img src="./images/窒息矿井.png" alt="地图大全">
+                    </div>
+                    <div class="card-content">
+                        <h3>地图大全</h3>
+                        <p>地形结构、地下室点位、无敌房与博弈技巧</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        本网站为爱好者学习制作，黎明杀机版权归 Behaviour Interactive 所有
+    </footer>
+
+    <!-- 引入脚本 -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

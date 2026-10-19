@@ -1,0 +1,12 @@
+# 构建 / 发布产物
+dist/
+*.zip
+
+# 编辑器与临时脚本
+.vscode/
+.probe/
+
+# 系统垃圾文件
+Thumbs.db
+Desktop.ini
+.DS_Store

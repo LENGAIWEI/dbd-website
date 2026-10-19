@@ -1,0 +1,1551 @@
+{
+  "generatedAt": "2026-10-07T05:02:14.720Z",
+  "source": "michaelexile/DBD-IconsJSON",
+  "items": [
+    {
+      "slug": "toolboxEngineers",
+      "file": "Items/iconItems_toolboxEngineers.png",
+      "zh": "工程师工具箱",
+      "en": "Engineer's Toolbox",
+      "effect": "耐久极高，但修机与破坏有速度惩罚。",
+      "cat": "工具箱",
+      "rarity": "非常稀有"
+    },
+    {
+      "slug": "toolbox",
+      "file": "Items/iconItems_toolbox.png",
+      "zh": "工具箱",
+      "en": "Toolbox",
+      "effect": "修理发电机，可拆钩子与图腾。",
+      "cat": "工具箱",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "toolboxMechanics",
+      "file": "Items/iconItems_toolboxMechanics.png",
+      "zh": "机械师工具箱",
+      "en": "Mechanic's Toolbox",
+      "effect": "耐久较低，但破坏钩子/图腾更快。",
+      "cat": "工具箱",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "toolboxCommodious",
+      "file": "Items/iconItems_toolboxCommodious.png",
+      "zh": "宽裕工具箱",
+      "en": "Commodious Toolbox",
+      "effect": "耐久更高、修机更快，破坏速度略低。",
+      "cat": "工具箱",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "toolboxWornOut",
+      "file": "Items/iconItems_toolboxWornOut.png",
+      "zh": "破旧工具包",
+      "en": "Worn-Out Tools",
+      "effect": "可修理发电机、拆钩子，耐久最低。",
+      "cat": "工具箱",
+      "rarity": "普通"
+    },
+    {
+      "slug": "toolboxAlexs",
+      "file": "Items/iconItems_toolboxAlexs.png",
+      "zh": "亚历克斯的工具箱",
+      "en": "Alex's Toolbox",
+      "effect": "综合最强，耐久与修机速度都高。",
+      "cat": "工具箱",
+      "rarity": "非常稀有"
+    },
+    {
+      "slug": "firstAidKit",
+      "file": "Items/iconItems_firstAidKit.png",
+      "zh": "急救包",
+      "en": "First Aid Kit",
+      "effect": "治疗自己或队友，耐久中等。",
+      "cat": "医疗包",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "emergencyMedKit",
+      "file": "Items/iconItems_emergencyMedKit.png",
+      "zh": "急救医疗包",
+      "en": "Emergency Med-Kit",
+      "effect": "治疗速度较快，耐久中等偏低。",
+      "cat": "医疗包",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "campingAidKit",
+      "file": "Items/iconItems_campingAidKit.png",
+      "zh": "露营医疗包",
+      "en": "Camping Aid Kit",
+      "effect": "治疗自己或队友，耐久低。",
+      "cat": "医疗包",
+      "rarity": "普通"
+    },
+    {
+      "slug": "rundownAidKit",
+      "file": "Items/iconItems_rundownAidKit.png",
+      "zh": "破旧医疗包",
+      "en": "Rundown Aid Kit",
+      "effect": "治疗自己或队友，耐久最低。",
+      "cat": "医疗包",
+      "rarity": "普通"
+    },
+    {
+      "slug": "medkit",
+      "file": "Items/iconItems_medkit.png",
+      "zh": "医疗包",
+      "en": "Med-Kit",
+      "effect": "治疗速度较快，性价比最高。",
+      "cat": "医疗包",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "rangersAidKit",
+      "file": "Items/iconItems_rangersAidKit.png",
+      "zh": "游侠医疗包",
+      "en": "Ranger's Aid Kit",
+      "effect": "耐久最高，适合反复救人。",
+      "cat": "医疗包",
+      "rarity": "非常稀有"
+    },
+    {
+      "slug": "flashlightUtility",
+      "file": "Items/iconItems_flashlightUtility.png",
+      "zh": "实用型手电筒",
+      "en": "Utility Flashlight",
+      "effect": "照射范围宽、耐久高，适合新手。",
+      "cat": "手电筒",
+      "rarity": "非常稀有"
+    },
+    {
+      "slug": "flashlight",
+      "file": "Items/iconItems_flashlight.png",
+      "zh": "手电筒",
+      "en": "Flashlight",
+      "effect": "照射杀手使其致盲，可打断搬运、救人。",
+      "cat": "手电筒",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "flashlightSport",
+      "file": "Items/iconItems_flashlightSport.png",
+      "zh": "运动型手电筒",
+      "en": "Sport Flashlight",
+      "effect": "照射距离更远、致盲更快，耐久较低。",
+      "cat": "手电筒",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "rainbowMap",
+      "file": "Items/iconItems_rainbowMap.png",
+      "zh": "彩虹地图",
+      "en": "Rainbow Map",
+      "effect": "追踪多种目标，探测范围最大。",
+      "cat": "地图",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "map",
+      "file": "Items/iconItems_map.png",
+      "zh": "地图",
+      "en": "Map",
+      "effect": "显示附近发电机、钩子、图腾位置。",
+      "cat": "地图",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "CrypticMap",
+      "file": "Items/T_UI_iconItems_CrypticMap.png",
+      "zh": "谜之地图",
+      "en": "Cryptic Map",
+      "effect": "显示特定目标位置。",
+      "cat": "地图",
+      "rarity": "普通"
+    },
+    {
+      "slug": "bloodsenseMap",
+      "file": "Items/iconItems_bloodsenseMap.png",
+      "zh": "血感地图",
+      "en": "Bloodsense Map",
+      "effect": "显示受伤逃生者与血迹（活动）。",
+      "cat": "地图",
+      "rarity": "活动"
+    },
+    {
+      "slug": "bloodMap",
+      "file": "Items/Spring/iconItems_bloodMap.png",
+      "zh": "血色地图",
+      "en": "Blood Map",
+      "effect": "活动限定地图。",
+      "cat": "地图",
+      "rarity": "活动"
+    },
+    {
+      "slug": "dullKey",
+      "file": "Items/iconItems_dullKey.png",
+      "zh": "暗淡的钥匙",
+      "en": "Dull Key",
+      "effect": "配合附加品可开启特殊出口。",
+      "cat": "钥匙",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "skeletonKey",
+      "file": "Items/iconItems_skeletonKey.png",
+      "zh": "骷髅钥匙",
+      "en": "Skeleton Key",
+      "effect": "可开启 hatch 与部分封锁区域。",
+      "cat": "钥匙",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "brokenKey",
+      "file": "Items/iconItems_brokenKey.png",
+      "zh": "破损的钥匙",
+      "en": "Broken Key",
+      "effect": "无附加品时无作用，仅作配件载体。",
+      "cat": "钥匙",
+      "rarity": "普通"
+    },
+    {
+      "slug": "key",
+      "file": "Items/iconItems_key.png",
+      "zh": "钥匙",
+      "en": "Key",
+      "effect": "可开启 hatch，需搭配附加品。",
+      "cat": "钥匙",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "artisansFogVial",
+      "file": "Items/T_UI_iconItems_artisansFogVial.png",
+      "zh": "工匠之雾瓶",
+      "en": "Artisan's Fog Vial",
+      "effect": "杀手道具，迷雾更浓。",
+      "cat": "雾之瓶",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "vigosFogVial",
+      "file": "Items/T_UI_iconItems_vigosFogVial.png",
+      "zh": "维戈之雾瓶",
+      "en": "Vigo's Fog Vial",
+      "effect": "杀手道具，迷雾效果最强。",
+      "cat": "雾之瓶",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "apprenticesFogVial",
+      "file": "Items/T_UI_iconItems_apprenticesFogVial.png",
+      "zh": "学徒之雾瓶",
+      "en": "Apprentice's Fog Vial",
+      "effect": "杀手道具，制造迷雾干扰视野。",
+      "cat": "雾之瓶",
+      "rarity": "普通"
+    },
+    {
+      "slug": "flashlight_anniversary2020",
+      "file": "Items/Anniversary/iconItems_flashlight_anniversary2020.png",
+      "zh": "2020 周年纪念手电筒",
+      "en": "Anniversary 手电筒 2020",
+      "effect": "周年活动限定道具。",
+      "cat": "活动道具",
+      "rarity": "活动"
+    },
+    {
+      "slug": "medkit_anniversary2020",
+      "file": "Items/Anniversary/iconItems_medkit_anniversary2020.png",
+      "zh": "2020 周年纪念医疗包",
+      "en": "Anniversary 医疗包 2020",
+      "effect": "周年活动限定道具。",
+      "cat": "活动道具",
+      "rarity": "活动"
+    },
+    {
+      "slug": "toolbox_anniversary2021",
+      "file": "Items/Anniversary/iconItems_toolbox_anniversary2021.png",
+      "zh": "2021 周年纪念工具箱",
+      "en": "Anniversary 工具箱 2021",
+      "effect": "周年活动限定道具。",
+      "cat": "活动道具",
+      "rarity": "活动"
+    },
+    {
+      "slug": "toolbox_anniversary2022",
+      "file": "Items/Anniversary/iconItems_toolbox_anniversary2022.png",
+      "zh": "2022 周年纪念工具箱",
+      "en": "Anniversary 工具箱 2022",
+      "effect": "周年活动限定道具。",
+      "cat": "活动道具",
+      "rarity": "活动"
+    },
+    {
+      "slug": "flashlight_anniversary2022",
+      "file": "Items/Anniversary/iconItems_flashlight_anniversary2022.png",
+      "zh": "2022 周年纪念手电筒",
+      "en": "Anniversary 手电筒 2022",
+      "effect": "周年活动限定道具。",
+      "cat": "活动道具",
+      "rarity": "活动"
+    },
+    {
+      "slug": "medkit_anniversary2022",
+      "file": "Items/Anniversary/iconItems_medkit_anniversary2022.png",
+      "zh": "2022 周年纪念医疗包",
+      "en": "Anniversary 医疗包 2022",
+      "effect": "周年活动限定道具。",
+      "cat": "活动道具",
+      "rarity": "活动"
+    },
+    {
+      "slug": "toolbox_anniversary2026",
+      "file": "Items/t_UI_iconItems_toolbox_anniversary2026.png",
+      "zh": "2026 周年纪念工具箱",
+      "en": "Anniversary 工具箱 2026",
+      "effect": "周年活动限定道具。",
+      "cat": "活动道具",
+      "rarity": "活动"
+    },
+    {
+      "slug": "flashlight_anniversary2026",
+      "file": "Items/t_UI_iconItems_flashlight_anniversary2026.png",
+      "zh": "2026 周年纪念手电筒",
+      "en": "Anniversary 手电筒 2026",
+      "effect": "周年活动限定道具。",
+      "cat": "活动道具",
+      "rarity": "活动"
+    },
+    {
+      "slug": "medkit_anniversary2026",
+      "file": "Items/t_UI_iconItems_medkit_anniversary2026.png",
+      "zh": "2026 周年纪念医疗包",
+      "en": "Anniversary 医疗包 2026",
+      "effect": "周年活动限定道具。",
+      "cat": "活动道具",
+      "rarity": "活动"
+    },
+    {
+      "slug": "winterEventFirecracker",
+      "file": "Items/WinterEvent/iconItems_winterEventFirecracker.png",
+      "zh": "冬季爆竹",
+      "en": "Winter Firecracker",
+      "effect": "冬日活动，爆炸致盲杀手。",
+      "cat": "活动道具",
+      "rarity": "活动"
+    },
+    {
+      "slug": "winterPartyStarter",
+      "file": "Items/iconItems_winterPartyStarter.png",
+      "zh": "冬季派对礼炮",
+      "en": "Winter Party Starter",
+      "effect": "冬日活动道具。",
+      "cat": "活动道具",
+      "rarity": "活动"
+    },
+    {
+      "slug": "willOWisp",
+      "file": "Items/iconItems_willOWisp.png",
+      "zh": "鬼火",
+      "en": "Will-o'-Wisp",
+      "effect": "活动道具。",
+      "cat": "活动道具",
+      "rarity": "活动"
+    },
+    {
+      "slug": "masqueradeToolbox",
+      "file": "Items/iconItems_masqueradeToolbox.png",
+      "zh": "假面舞会工具箱",
+      "en": "Masquerade Toolbox",
+      "effect": "活动道具。",
+      "cat": "活动道具",
+      "rarity": "活动"
+    },
+    {
+      "slug": "masqueradeFlashlight",
+      "file": "Items/iconItems_masqueradeFlashlight.png",
+      "zh": "假面舞会手电筒",
+      "en": "Masquerade Flashlight",
+      "effect": "活动道具。",
+      "cat": "活动道具",
+      "rarity": "活动"
+    },
+    {
+      "slug": "masqueradeMedKit",
+      "file": "Items/iconItems_masqueradeMedKit.png",
+      "zh": "假面舞会医疗包",
+      "en": "Masquerade Med-Kit",
+      "effect": "活动道具。",
+      "cat": "活动道具",
+      "rarity": "活动"
+    },
+    {
+      "slug": "festiveToolbox",
+      "file": "Items/iconItems_festiveToolbox.png",
+      "zh": "节日工具箱",
+      "en": "Festive Toolbox",
+      "effect": "冬日活动道具。",
+      "cat": "活动道具",
+      "rarity": "活动"
+    },
+    {
+      "slug": "toolboxLunar",
+      "file": "Items/LunarEvent/iconItems_toolboxLunar.png",
+      "zh": "农历工具箱",
+      "en": "Lunar Toolbox",
+      "effect": "农历新年活动道具。",
+      "cat": "活动道具",
+      "rarity": "活动"
+    },
+    {
+      "slug": "partyPopper",
+      "file": "Items/Anniversary/iconItems_partyPopper.png",
+      "zh": "派对礼炮",
+      "en": "Party Popper",
+      "effect": "周年活动道具。",
+      "cat": "活动道具",
+      "rarity": "活动"
+    },
+    {
+      "slug": "thirdYearPartyStarter",
+      "file": "Items/iconItems_thirdYearPartyStarter.png",
+      "zh": "三周年派对礼炮",
+      "en": "Third Year Party Starter",
+      "effect": "三周年活动道具。",
+      "cat": "活动道具",
+      "rarity": "活动"
+    },
+    {
+      "slug": "flashlightHalloween",
+      "file": "Items/Halloween/iconItems_flashlightHalloween.png",
+      "zh": "万圣节手电筒",
+      "en": "Halloween Flashlight",
+      "effect": "万圣节活动限定手电筒。",
+      "cat": "活动道具",
+      "rarity": "活动"
+    },
+    {
+      "slug": "medkitHalloween",
+      "file": "Items/Halloween/iconItems_medkitHalloween.png",
+      "zh": "万圣节医疗包",
+      "en": "Halloween Med-Kit",
+      "effect": "万圣节活动限定医疗包。",
+      "cat": "活动道具",
+      "rarity": "活动"
+    },
+    {
+      "slug": "allHallowsEveLunchbox",
+      "file": "Items/iconItems_allHallowsEveLunchbox.png",
+      "zh": "万圣夜午餐盒",
+      "en": "All Hallows' Eve Lunchbox",
+      "effect": "万圣节活动道具。",
+      "cat": "活动道具",
+      "rarity": "活动"
+    },
+    {
+      "slug": "voidCrystal",
+      "file": "Items/Halloween/iconItems_voidCrystal.png",
+      "zh": "虚空水晶",
+      "en": "Void Crystal",
+      "effect": "万圣节活动，可短暂透视。",
+      "cat": "活动道具",
+      "rarity": "活动"
+    },
+    {
+      "slug": "fireflyLantern",
+      "file": "Items/Modifier/iconItems_fireflyLantern.png",
+      "zh": "萤火灯笼",
+      "en": "Firefly Lantern",
+      "effect": "限时模式道具。",
+      "cat": "活动道具",
+      "rarity": "活动"
+    },
+    {
+      "slug": "chineseFirecracker",
+      "file": "Items/iconItems_chineseFirecracker.png",
+      "zh": "中国爆竹",
+      "en": "Chinese Firecracker",
+      "effect": "春节活动，爆炸干扰杀手。",
+      "cat": "活动道具",
+      "rarity": "活动"
+    },
+    {
+      "slug": "anniversaryToolbox",
+      "file": "Items/iconItems_anniversaryToolbox.png",
+      "zh": "周年纪念工具箱",
+      "en": "Anniversary 工具箱",
+      "effect": "周年活动限定道具。",
+      "cat": "活动道具",
+      "rarity": "活动"
+    },
+    {
+      "slug": "anniversaryFlashlight",
+      "file": "Items/iconItems_anniversaryFlashlight.png",
+      "zh": "周年纪念手电筒",
+      "en": "Anniversary 手电筒",
+      "effect": "周年活动限定道具。",
+      "cat": "活动道具",
+      "rarity": "活动"
+    },
+    {
+      "slug": "anniversaryMedKit",
+      "file": "Items/iconItems_anniversaryMedKit.png",
+      "zh": "周年纪念医疗包",
+      "en": "Anniversary 医疗包",
+      "effect": "周年活动限定道具。",
+      "cat": "活动道具",
+      "rarity": "活动"
+    }
+  ],
+  "offerings": [
+    {
+      "slug": "tarnishedCoin",
+      "file": "Favors/iconFavors_tarnishedCoin.png",
+      "zh": "暗淡硬币",
+      "effect": "血点祭品类祭品，硬币的暗淡版本。",
+      "cat": "血点祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "crispleafAmaranthSachet",
+      "file": "Favors/iconFavors_crispleafAmaranthSachet.png",
+      "zh": "脆叶苋香囊",
+      "effect": "血点祭品类祭品。",
+      "cat": "血点祭品",
+      "rarity": "普通"
+    },
+    {
+      "slug": "fragrantCrispleafAmaranth",
+      "file": "Favors/iconFavors_fragrantCrispleafAmaranth.png",
+      "zh": "芬芳脆叶苋香囊",
+      "effect": "血点祭品类祭品，脆叶苋香囊的芬芳版本。",
+      "cat": "血点祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "fragrantSweetWilliam",
+      "file": "Favors/iconFavors_fragrantSweetWilliam.png",
+      "zh": "芬芳石竹香囊",
+      "effect": "血点祭品类祭品，石竹香囊的芬芳版本。",
+      "cat": "血点祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "fragrantPrimroseBlossom",
+      "file": "Favors/iconFavors_fragrantPrimroseBlossom.png",
+      "zh": "芬芳月见草香囊",
+      "effect": "血点祭品类祭品，月见草香囊的芬芳版本。",
+      "cat": "血点祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "chalkPouch",
+      "file": "Favors/iconFavors_chalkPouch.png",
+      "zh": "粉笔袋",
+      "effect": "血点祭品类祭品。",
+      "cat": "血点祭品",
+      "rarity": "普通"
+    },
+    {
+      "slug": "scratchedCoin",
+      "file": "Favors/iconFavors_scratchedCoin.png",
+      "zh": "刮痕硬币",
+      "effect": "血点祭品类祭品，硬币的刮痕版本。",
+      "cat": "血点祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "ghastlyGateau",
+      "file": "Favors/iconFavors_ghastlyGateau.png",
+      "zh": "骇人蛋糕",
+      "effect": "结算时大幅增加血点。",
+      "cat": "血点祭品",
+      "rarity": "活动"
+    },
+    {
+      "slug": "murkyReagent",
+      "file": "Favors/iconFavors_murkyReagent.png",
+      "zh": "浑浊试剂",
+      "effect": "血点祭品类祭品，试剂的浑浊版本。",
+      "cat": "血点祭品",
+      "rarity": "非常稀有"
+    },
+    {
+      "slug": "screechCobbler",
+      "file": "Favors/iconFavors_screechCobbler.png",
+      "zh": "尖叫果馅饼",
+      "effect": "结算时增加血点。",
+      "cat": "血点祭品",
+      "rarity": "活动"
+    },
+    {
+      "slug": "frightfulFlan",
+      "file": "Favors/iconFavors_frightfulFlan.png",
+      "zh": "可怕布丁",
+      "effect": "结算时大幅增加血点。",
+      "cat": "血点祭品",
+      "rarity": "活动"
+    },
+    {
+      "slug": "terrormisu",
+      "file": "Favors/iconFavors_terrormisu.png",
+      "zh": "恐怖提拉米苏",
+      "effect": "结算时增加血点。",
+      "cat": "血点祭品",
+      "rarity": "活动"
+    },
+    {
+      "slug": "fullMoonBouquet",
+      "file": "Favors/iconFavors_fullMoonBouquet.png",
+      "zh": "满月月光花束",
+      "effect": "血点祭品类祭品，月光花束的满月版本。",
+      "cat": "血点祭品",
+      "rarity": "非常稀有"
+    },
+    {
+      "slug": "hazyReagent",
+      "file": "Favors/iconFavors_hazyReagent.png",
+      "zh": "朦胧试剂",
+      "effect": "血点祭品类祭品，试剂的朦胧版本。",
+      "cat": "血点祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "sealedEnvelope",
+      "file": "Favors/iconFavors_sealedEnvelope.png",
+      "zh": "密封信封",
+      "effect": "血点祭品类祭品，信封的密封版本。",
+      "cat": "血点祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "creamChalkPouch",
+      "file": "Favors/iconFavors_creamChalkPouch.png",
+      "zh": "奶油粉笔袋",
+      "effect": "血点祭品类祭品，粉笔袋的奶油版本。",
+      "cat": "血点祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "cutCoin",
+      "file": "Favors/iconFavors_cutCoin.png",
+      "zh": "切割硬币",
+      "effect": "血点祭品类祭品，硬币的切割版本。",
+      "cat": "血点祭品",
+      "rarity": "非常稀有"
+    },
+    {
+      "slug": "clearReagent",
+      "file": "Favors/iconFavors_clearReagent.png",
+      "zh": "清澈试剂",
+      "effect": "血点祭品类祭品，试剂的清澈版本。",
+      "cat": "血点祭品",
+      "rarity": "普通"
+    },
+    {
+      "slug": "shinyCoin",
+      "file": "Favors/iconFavors_shinyCoin.png",
+      "zh": "闪亮硬币",
+      "effect": "血点祭品类祭品，硬币的闪亮版本。",
+      "cat": "血点祭品",
+      "rarity": "非常稀有"
+    },
+    {
+      "slug": "sweetWilliamSachet",
+      "file": "Favors/iconFavors_sweetWilliamSachet.png",
+      "zh": "石竹香囊",
+      "effect": "血点祭品类祭品。",
+      "cat": "血点祭品",
+      "rarity": "普通"
+    },
+    {
+      "slug": "survivorPudding",
+      "file": "Favors/Anniversary/iconFavors_survivorPudding.png",
+      "zh": "逃生者布丁",
+      "effect": "结算时额外获得血点。",
+      "cat": "血点祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "escapeCake",
+      "file": "Favors/Anniversary/iconFavors_escapeCake.png",
+      "zh": "逃脱蛋糕",
+      "effect": "结算时额外获得血点。",
+      "cat": "血点祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "faintReagent",
+      "file": "Favors/iconFavors_faintReagent.png",
+      "zh": "稀薄试剂",
+      "effect": "血点祭品类祭品，试剂的稀薄版本。",
+      "cat": "血点祭品",
+      "rarity": "普通"
+    },
+    {
+      "slug": "quarterMoonBouquet",
+      "file": "Favors/iconFavors_quarterMoonBouquet.png",
+      "zh": "弦月月光花束",
+      "effect": "血点祭品类祭品，月光花束的弦月版本。",
+      "cat": "血点祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "sacrificialCake",
+      "file": "Favors/iconFavors_sacrificialCake.png",
+      "zh": "献祭蛋糕",
+      "effect": "结算时增加血点。",
+      "cat": "血点祭品",
+      "rarity": "活动"
+    },
+    {
+      "slug": "ivoryChalkPouch",
+      "file": "Favors/iconFavors_ivoryChalkPouch.png",
+      "zh": "象牙粉笔袋",
+      "effect": "血点祭品类祭品，粉笔袋的象牙版本。",
+      "cat": "血点祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "freshCrispleafAmaranth",
+      "file": "Favors/iconFavors_freshCrispleafAmaranth.png",
+      "zh": "新鲜脆叶苋香囊",
+      "effect": "血点祭品类祭品，脆叶苋香囊的新鲜版本。",
+      "cat": "血点祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "freshSweetWilliam",
+      "file": "Favors/iconFavors_freshSweetWilliam.png",
+      "zh": "新鲜石竹香囊",
+      "effect": "血点祭品类祭品，石竹香囊的新鲜版本。",
+      "cat": "血点祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "freshPrimroseBlossom",
+      "file": "Favors/iconFavors_freshPrimroseBlossom.png",
+      "zh": "新鲜月见草香囊",
+      "effect": "血点祭品类祭品，月见草香囊的新鲜版本。",
+      "cat": "血点祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "crescentMoonBouquet",
+      "file": "Favors/iconFavors_crescentMoonBouquet.png",
+      "zh": "新月月光花束",
+      "effect": "血点祭品类祭品，月光花束的新月版本。",
+      "cat": "血点祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "bloodyPartyStreamers",
+      "file": "Favors/Anniversary/iconFavors_bloodyPartyStreamers.png",
+      "zh": "血染派对彩带",
+      "effect": "全体玩家结算时大幅增加血点。",
+      "cat": "血点祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "primroseBlossomSachet",
+      "file": "Favors/iconFavors_primroseBlossomSachet.png",
+      "zh": "月见草香囊",
+      "effect": "血点祭品类祭品。",
+      "cat": "血点祭品",
+      "rarity": "普通"
+    },
+    {
+      "slug": "boundEnvelope",
+      "file": "Favors/iconFavors_boundEnvelope.png",
+      "zh": "装订信封",
+      "effect": "血点祭品类祭品，信封的装订版本。",
+      "cat": "血点祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "azarovsKey",
+      "file": "Favors/iconFavors_azarovsKey.png",
+      "zh": "阿扎罗夫的钥匙",
+      "effect": "提升「阿扎罗夫长眠处」出现概率。",
+      "cat": "领域祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "pElliottLunacyTicket",
+      "file": "Favors/iconFavors_pElliottLunacyTicket.png",
+      "zh": "埃利奥特疯人院门票",
+      "effect": "大幅提升「疗养院」出现概率。",
+      "cat": "领域祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "paintedRiverRock",
+      "file": "Favors/iconFavors_paintedRiverRock.png",
+      "zh": "彩绘河石",
+      "effect": "提升「红树林」地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "普通"
+    },
+    {
+      "slug": "childrensBook",
+      "file": "Favors/iconFavors_childrensBook.png",
+      "zh": "儿童读物",
+      "effect": "提升「幼儿园」地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "moldyOak",
+      "file": "Favors/iconFavors_moldyOak.png",
+      "zh": "发霉橡木",
+      "effect": "领域祭品类祭品，橡木的发霉版本。",
+      "cat": "领域祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "fragrantBogLaurel",
+      "file": "Favors/iconFavors_fragrantBogLaurel.png",
+      "zh": "芬芳沼泽月桂",
+      "effect": "领域祭品类祭品，沼泽月桂的芬芳版本。",
+      "cat": "领域祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "harvestFestivalLeaflet",
+      "file": "Favors/iconFavors_harvestFestivalLeaflet.png",
+      "zh": "丰收节传单",
+      "effect": "提升「红树林」地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "普通"
+    },
+    {
+      "slug": "lunacyTicket",
+      "file": "Favors/iconFavors_lunacyTicket.png",
+      "zh": "疯人院门票",
+      "effect": "提升「疗养院」地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "普通"
+    },
+    {
+      "slug": "virginiaPlate",
+      "file": "Favors/iconFavors_virginiaPlate.png",
+      "zh": "弗吉尼亚车牌",
+      "effect": "提升特定地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "putridOak",
+      "file": "Favors/iconFavors_putridOak.png",
+      "zh": "腐臭橡木",
+      "effect": "领域祭品类祭品，橡木的腐臭版本。",
+      "cat": "领域祭品",
+      "rarity": "非常稀有"
+    },
+    {
+      "slug": "rottenOak",
+      "file": "Favors/iconFavors_rottenOak.png",
+      "zh": "腐朽橡木",
+      "effect": "领域祭品类祭品，橡木的腐朽版本。",
+      "cat": "领域祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "thePiedPiper",
+      "file": "Favors/England/iconFavors_thePiedPiper.png",
+      "zh": "花衣魔笛手",
+      "effect": "提升「寒鸦巢穴」地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "hawkinsNationalLaboratoryID",
+      "file": "Favors/Qatar/iconFavors_hawkinsNationalLaboratoryID.png",
+      "zh": "霍金斯国家实验室证件",
+      "effect": "提升该地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "emergencyCertificate",
+      "file": "Favors/iconFavors_emergencyCertificate.png",
+      "zh": "急救证书",
+      "effect": "提升「疗养院」地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "普通"
+    },
+    {
+      "slug": "psychiatricAssessmentReport",
+      "file": "Favors/iconFavors_psychiatricAssessmentReport.png",
+      "zh": "精神评估报告",
+      "effect": "提升「疗养院」地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "vigosBlueprint",
+      "file": "Favors/Yemen/iconFavors_vigosBlueprint.png",
+      "zh": "蓝图",
+      "effect": "领域祭品类祭品。",
+      "cat": "领域祭品",
+      "rarity": "普通"
+    },
+    {
+      "slug": "marysLetter",
+      "file": "Favors/Wales/iconFavors_marysLetter.png",
+      "zh": "玛丽的信",
+      "effect": "提升特定地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "macmilliansPhalanxBone",
+      "file": "Favors/iconFavors_macmilliansPhalanxBone.png",
+      "zh": "麦克米伦的趾骨",
+      "effect": "提升「麦克米伦庄园」地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "macMillanLedgerPage",
+      "file": "Favors/iconFavors_macMillanLedgerPage.png",
+      "zh": "麦克米伦账本页",
+      "effect": "提升「麦克米伦庄园」地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "普通"
+    },
+    {
+      "slug": "fumingWelcomeSign",
+      "file": "Favors/iconFavors_fumingWelcomeSign.png",
+      "zh": "冒烟的欢迎牌",
+      "effect": "大幅提升特定地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "fumingCordage",
+      "file": "Favors/iconFavors_fumingCordage.png",
+      "zh": "冒烟的绳索",
+      "effect": "提升特定地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "普通"
+    },
+    {
+      "slug": "cattleTag28",
+      "file": "Favors/iconFavors_cattleTag28.png",
+      "zh": "牛耳标 28 号",
+      "effect": "提升「农场」地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "普通"
+    },
+    {
+      "slug": "cattleTag81",
+      "file": "Favors/iconFavors_cattleTag81.png",
+      "zh": "牛耳标 81 号",
+      "effect": "提升「农场」地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "BeefTallowMixture",
+      "file": "Favors/Quantum/iconFavors_BeefTallowMixture.png",
+      "zh": "牛油混合物",
+      "effect": "提升「农场」地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "IchorousLoam",
+      "file": "Favors/Meteor/iconFavors_IchorousLoam.png",
+      "zh": "脓液沃土",
+      "effect": "提升「枯萎者」相关领域出现概率。",
+      "cat": "领域祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "jigsawPiece",
+      "file": "Favors/Finland/iconFavors_jigsawPiece.png",
+      "zh": "拼图碎片",
+      "effect": "提升「游戏」地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "decrepitClapboard",
+      "file": "Favors/iconFavors_decrepitClapboard.png",
+      "zh": "破旧墙板",
+      "effect": "提升「汤普森之家」地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "shatteredGlasses",
+      "file": "Favors/DLC4/iconFavors_shatteredGlasses.png",
+      "zh": "破碎的眼镜",
+      "effect": "提升「疗养院」地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "tornBlueprint",
+      "file": "Favors/Yemen/iconFavors_tornBlueprint.png",
+      "zh": "破损蓝图",
+      "effect": "领域祭品类祭品，蓝图的破损版本。",
+      "cat": "领域祭品",
+      "rarity": "普通"
+    },
+    {
+      "slug": "airlockDoors",
+      "file": "Favors/Wormhole/iconFavors_airlockDoors.png",
+      "zh": "气闸门",
+      "effect": "提升「诺斯托罗莫号」地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "signedLedgerPage",
+      "file": "Favors/iconFavors_signedLedgerPage.png",
+      "zh": "签名的账本页",
+      "effect": "大幅提升「麦克米伦庄园」出现概率。",
+      "cat": "领域祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "bloodiedBlueprint",
+      "file": "Favors/Yemen/iconFavors_bloodiedBlueprint.png",
+      "zh": "染血蓝图",
+      "effect": "领域祭品类祭品，蓝图的染血版本。",
+      "cat": "领域祭品",
+      "rarity": "普通"
+    },
+    {
+      "slug": "yamaokasCrest",
+      "file": "Favors/Haiti/iconFavors_yamaokasCrest.png",
+      "zh": "山冈家纹章",
+      "effect": "提升「山冈家族」地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "charredWeddingPhotograph",
+      "file": "Favors/iconFavors_charredWeddingPhotograph.png",
+      "zh": "烧焦的结婚照",
+      "effect": "提升「红树林」地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "petrifiedOak",
+      "file": "Favors/iconFavors_petrifiedOak.png",
+      "zh": "石化橡木",
+      "effect": "领域祭品类祭品，橡木的石化版本。",
+      "cat": "领域祭品",
+      "rarity": "非常稀有"
+    },
+    {
+      "slug": "damagedPhoto",
+      "file": "Favors/Kenya/iconFavors_damagedPhoto.png",
+      "zh": "受损的照片",
+      "effect": "提升特定地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "strodeRealtyKey",
+      "file": "Favors/DLC2/iconFavors_strodeRealtyKey.png",
+      "zh": "斯特罗德地产钥匙",
+      "effect": "提升「哈登菲尔德」地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "shreddedPlate",
+      "file": "Favors/iconFavors_shreddedPlate.png",
+      "zh": "碎裂的盘子",
+      "effect": "提升「疗养院」地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "普通"
+    },
+    {
+      "slug": "ShatteredBottle",
+      "file": "Favors/Ukraine/iconFavors_ShatteredBottle.png",
+      "zh": "碎瓶子",
+      "effect": "提升「疗养院」地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "granmasCookbook",
+      "file": "Favors/DLC3/iconFavors_granmasCookbook.png",
+      "zh": "外婆的食谱",
+      "effect": "提升「汤普森之家」地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "crowsEye",
+      "file": "Favors/Ion/iconFavors_crowsEye.png",
+      "zh": "乌鸦之眼",
+      "effect": "提升「寒鸦巢穴」地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "heartLocket",
+      "file": "Favors/iconFavors_heartLocket.png",
+      "zh": "心形吊坠",
+      "effect": "提升「克劳黛特」相关领域出现概率。",
+      "cat": "领域祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "freshBogLaurel",
+      "file": "Favors/iconFavors_freshBogLaurel.png",
+      "zh": "新鲜沼泽月桂",
+      "effect": "领域祭品类祭品，沼泽月桂的新鲜版本。",
+      "cat": "领域祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "alienFlora",
+      "file": "Favors/Umbra/iconFavors_alienFlora.png",
+      "zh": "异星植物",
+      "effect": "提升「诺斯托罗莫号」地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "bogLaurelSachet",
+      "file": "Favors/iconFavors_bogLaurelSachet.png",
+      "zh": "沼泽月桂",
+      "effect": "领域祭品类祭品。",
+      "cat": "领域祭品",
+      "rarity": "普通"
+    },
+    {
+      "slug": "annotatedBlueprint",
+      "file": "Favors/Yemen/iconFavors_annotatedBlueprint.png",
+      "zh": "注释蓝图",
+      "effect": "领域祭品类祭品，蓝图的注释版本。",
+      "cat": "领域祭品",
+      "rarity": "普通"
+    },
+    {
+      "slug": "theLastMask",
+      "file": "Favors/DLC5/iconFavors_theLastMask.png",
+      "zh": "最后的面具",
+      "effect": "提升「奥蒙德」地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "RPDBadge",
+      "file": "Favors/Eclipse/iconsFavors_RPDBadge.png",
+      "zh": "RPD 徽章",
+      "effect": "提升「浣熊市警察局」地图出现概率。",
+      "cat": "领域祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "spottedOwlWreath",
+      "file": "Favors/iconFavors_spottedOwlWreath.png",
+      "zh": "斑点鸮花环",
+      "effect": "幸运祭品类祭品。",
+      "cat": "幸运祭品",
+      "rarity": "普通"
+    },
+    {
+      "slug": "shrikeWreath",
+      "file": "Favors/iconFavors_shrikeWreath.png",
+      "zh": "伯劳花环",
+      "effect": "幸运祭品类祭品。",
+      "cat": "幸运祭品",
+      "rarity": "普通"
+    },
+    {
+      "slug": "ardentSpottedOwlWreath",
+      "file": "Favors/iconFavors_ardentSpottedOwlWreath.png",
+      "zh": "炽烈斑点鸮花环",
+      "effect": "幸运祭品类祭品，斑点鸮花环的炽烈版本。",
+      "cat": "幸运祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "ardentShrikeWreath",
+      "file": "Favors/iconFavors_ardentShrikeWreath.png",
+      "zh": "炽烈伯劳花环",
+      "effect": "幸运祭品类祭品，伯劳花环的炽烈版本。",
+      "cat": "幸运祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "ardentRavenWreath",
+      "file": "Favors/iconFavors_ardentRavenWreath.png",
+      "zh": "炽烈渡鸦花环",
+      "effect": "幸运祭品类祭品，渡鸦花环的炽烈版本。",
+      "cat": "幸运祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "ardentTanagerWreath",
+      "file": "Favors/iconFavors_ardentTanagerWreath.png",
+      "zh": "炽烈唐纳雀花环",
+      "effect": "幸运祭品类祭品，唐纳雀花环的炽烈版本。",
+      "cat": "幸运祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "ravenWreath",
+      "file": "Favors/iconFavors_ravenWreath.png",
+      "zh": "渡鸦花环",
+      "effect": "幸运祭品类祭品。",
+      "cat": "幸运祭品",
+      "rarity": "普通"
+    },
+    {
+      "slug": "devoutSpottedOwlWreath",
+      "file": "Favors/iconFavors_devoutSpottedOwlWreath.png",
+      "zh": "虔诚斑点鸮花环",
+      "effect": "幸运祭品类祭品，斑点鸮花环的虔诚版本。",
+      "cat": "幸运祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "devoutShrikeWreath",
+      "file": "Favors/iconFavors_devoutShrikeWreath.png",
+      "zh": "虔诚伯劳花环",
+      "effect": "幸运祭品类祭品，伯劳花环的虔诚版本。",
+      "cat": "幸运祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "devoutRavenWreath",
+      "file": "Favors/iconFavors_devoutRavenWreath.png",
+      "zh": "虔诚渡鸦花环",
+      "effect": "幸运祭品类祭品，渡鸦花环的虔诚版本。",
+      "cat": "幸运祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "devoutTanagerWreath",
+      "file": "Favors/iconFavors_devoutTanagerWreath.png",
+      "zh": "虔诚唐纳雀花环",
+      "effect": "幸运祭品类祭品，唐纳雀花环的虔诚版本。",
+      "cat": "幸运祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "tanagerWreath",
+      "file": "Favors/iconFavors_tanagerWreath.png",
+      "zh": "唐纳雀花环",
+      "effect": "幸运祭品类祭品。",
+      "cat": "幸运祭品",
+      "rarity": "普通"
+    },
+    {
+      "slug": "momentoMoriCypress",
+      "file": "Favors/iconFavors_momentoMoriCypress.png",
+      "zh": "处决祭品 (Memento Mori)",
+      "effect": "杀手专属类祭品。",
+      "cat": "杀手专属",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "ivoryMementoMori",
+      "file": "Favors/iconFavors_ivoryMementoMori.png",
+      "zh": "象牙处决祭品 (Memento Mori)",
+      "effect": "杀手专属类祭品，处决祭品 (Memento Mori)的象牙版本。",
+      "cat": "杀手专属",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "10thAnniversary",
+      "file": "Favors/iconsFavors_10thAnniversary.png",
+      "zh": "10 周年纪念祭品",
+      "effect": "周年活动祭品，结算时增加血点。",
+      "cat": "活动祭品",
+      "rarity": "活动"
+    },
+    {
+      "slug": "4thAnniversary",
+      "file": "Favors/Anniversary/iconFavors_4thAnniversary.png",
+      "zh": "4 周年纪念祭品",
+      "effect": "周年活动祭品，结算时增加血点。",
+      "cat": "活动祭品",
+      "rarity": "活动"
+    },
+    {
+      "slug": "5thAnniversary",
+      "file": "Favors/Anniversary/iconsFavors_5thAnniversary.png",
+      "zh": "5 周年纪念祭品",
+      "effect": "周年活动祭品，结算时增加血点。",
+      "cat": "活动祭品",
+      "rarity": "活动"
+    },
+    {
+      "slug": "6thAnniversary",
+      "file": "Favors/Anniversary/iconsFavors_6thAnniversary.png",
+      "zh": "6 周年纪念祭品",
+      "effect": "周年活动祭品，结算时增加血点。",
+      "cat": "活动祭品",
+      "rarity": "活动"
+    },
+    {
+      "slug": "7thAnniversary",
+      "file": "Favors/Anniversary/iconsFavors_7thAnniversary.png",
+      "zh": "7 周年纪念祭品",
+      "effect": "周年活动祭品，结算时增加血点。",
+      "cat": "活动祭品",
+      "rarity": "活动"
+    },
+    {
+      "slug": "8thAnniversary",
+      "file": "Favors/Anniversary/iconsFavors_8thAnniversary.png",
+      "zh": "8 周年纪念祭品",
+      "effect": "周年活动祭品，结算时增加血点。",
+      "cat": "活动祭品",
+      "rarity": "活动"
+    },
+    {
+      "slug": "T_UI_iconsFavors_9thAnniversary",
+      "file": "Favors/Anniversary/T_UI_iconsFavors_9thAnniversary.png",
+      "zh": "9 周年纪念祭品",
+      "effect": "周年活动祭品，结算时增加血点。",
+      "cat": "活动祭品",
+      "rarity": "活动"
+    },
+    {
+      "slug": "ArcaneDowsingRod",
+      "file": "Favors/Halloween2022/iconFavors_ArcaneDowsingRod.png",
+      "zh": "奥术探水杖",
+      "effect": "活动祭品。",
+      "cat": "活动祭品",
+      "rarity": "活动"
+    },
+    {
+      "slug": "bloodshotEye",
+      "file": "Favors/Spring/iconFavors_bloodshotEye.png",
+      "zh": "充血的眼球",
+      "effect": "活动祭品。",
+      "cat": "活动祭品",
+      "rarity": "活动"
+    },
+    {
+      "slug": "Winter",
+      "file": "Favors/Gelato/iconsFavors_Winter.png",
+      "zh": "冬季祭品",
+      "effect": "冬日活动祭品。",
+      "cat": "活动祭品",
+      "rarity": "活动"
+    },
+    {
+      "slug": "redMoneyPacket",
+      "file": "Favors/LunarNewYear/iconFavors_redMoneyPacket.png",
+      "zh": "红包",
+      "effect": "春节活动祭品。",
+      "cat": "活动祭品",
+      "rarity": "活动"
+    },
+    {
+      "slug": "gruesomeGateau",
+      "file": "Favors/Anniversary/iconFavors_gruesomeGateau.png",
+      "zh": "恐怖蛋糕",
+      "effect": "周年活动祭品。",
+      "cat": "活动祭品",
+      "rarity": "活动"
+    },
+    {
+      "slug": "pustulaPetals",
+      "file": "Favors/Halloween/iconFavors_pustulaPetals.png",
+      "zh": "脓疱花瓣",
+      "effect": "活动祭品。",
+      "cat": "活动祭品",
+      "rarity": "活动"
+    },
+    {
+      "slug": "bbqInvitation",
+      "file": "Favors/Summer/iconFavors_bbqInvitation.png",
+      "zh": "烧烤邀请函",
+      "effect": "活动祭品。",
+      "cat": "活动祭品",
+      "rarity": "活动"
+    },
+    {
+      "slug": "CursedSeed",
+      "file": "Favors/Halloween2021/iconFavors_CursedSeed.png",
+      "zh": "诅咒之种",
+      "effect": "活动祭品。",
+      "cat": "活动祭品",
+      "rarity": "活动"
+    },
+    {
+      "slug": "vipWristband",
+      "file": "Favors/iconsFavors_vipWristband.png",
+      "zh": "VIP 手环",
+      "effect": "活动祭品。",
+      "cat": "活动祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "whiteWard",
+      "file": "Favors/iconFavors_whiteWard.png",
+      "zh": "白色守护结界 (Ward)",
+      "effect": "其他祭品类祭品，守护结界 (Ward)的白色版本。",
+      "cat": "其他祭品",
+      "rarity": "非常稀有"
+    },
+    {
+      "slug": "MilkTea",
+      "file": "Favors/iconFavors_MilkTea.png",
+      "zh": "茶",
+      "effect": "其他祭品类祭品。",
+      "cat": "其他祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "BlackTea",
+      "file": "Favors/iconFavors_BlackTea.png",
+      "zh": "黑色茶",
+      "effect": "其他祭品类祭品，茶的黑色版本。",
+      "cat": "其他祭品",
+      "rarity": "普通"
+    },
+    {
+      "slug": "blackWard",
+      "file": "Favors/iconFavors_blackWard.png",
+      "zh": "黑色守护结界 (Ward)",
+      "effect": "其他祭品类祭品，守护结界 (Ward)的黑色版本。",
+      "cat": "其他祭品",
+      "rarity": "非常稀有"
+    },
+    {
+      "slug": "blackSplinter",
+      "file": "Favors/iconFavors_blackSplinter.png",
+      "zh": "黑色碎片",
+      "effect": "其他祭品类祭品，碎片的黑色版本。",
+      "cat": "其他祭品",
+      "rarity": "Visceral"
+    },
+    {
+      "slug": "blackSaltStatuette",
+      "file": "Favors/iconFavors_blackSaltStatuette.png",
+      "zh": "黑盐雕像",
+      "effect": "大幅提升地下室钩子数量。",
+      "cat": "其他祭品",
+      "rarity": "稀有"
+    },
+    {
+      "slug": "hollowShell",
+      "file": "Favors/iconFavors_hollowShell.png",
+      "zh": "空壳",
+      "effect": "增加地下室出现概率。",
+      "cat": "其他祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "BlankPostcard",
+      "file": "Favors/iconFavors_BlankPostcard.png",
+      "zh": "明信片",
+      "effect": "其他祭品类祭品。",
+      "cat": "其他祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "WoodenChalice",
+      "file": "Favors/iconFavors_WoodenChalice.png",
+      "zh": "圣杯",
+      "effect": "其他祭品类祭品。",
+      "cat": "其他祭品",
+      "rarity": "普通"
+    },
+    {
+      "slug": "wardWhite",
+      "file": "Favors/iconFavors_wardWhite.png",
+      "zh": "守护守护结界 (Ward)",
+      "effect": "其他祭品类祭品，守护结界 (Ward)的守护版本。",
+      "cat": "其他祭品",
+      "rarity": "非常稀有"
+    },
+    {
+      "slug": "boneSplinter",
+      "file": "Favors/iconFavors_boneSplinter.png",
+      "zh": "碎片",
+      "effect": "其他祭品类祭品。",
+      "cat": "其他祭品",
+      "rarity": "Visceral"
+    },
+    {
+      "slug": "ClayDoll",
+      "file": "Favors/iconFavors_ClayDoll.png",
+      "zh": "娃娃",
+      "effect": "其他祭品类祭品。",
+      "cat": "其他祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "vigosJarOfSaltyLips",
+      "file": "Favors/iconFavors_vigosJarOfSaltyLips.png",
+      "zh": "维戈的腌嘴唇罐",
+      "effect": "大幅提升地下室出现概率。",
+      "cat": "其他祭品",
+      "rarity": "非常稀有"
+    },
+    {
+      "slug": "vigosShroud",
+      "file": "Favors/iconFavors_vigosShroud.png",
+      "zh": "维戈的遮蔽斗篷",
+      "effect": "开局与队友分开生成。",
+      "cat": "其他祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "unknown_QuestionMark",
+      "file": "Favors/unknown_QuestionMark.png",
+      "zh": "未知祭品",
+      "effect": "已从游戏移除或未公开。",
+      "cat": "其他祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "sacrificialWard",
+      "file": "Favors/iconFavors_sacrificialWard.png",
+      "zh": "献祭守护结界 (Ward)",
+      "effect": "其他祭品类祭品，守护结界 (Ward)的献祭版本。",
+      "cat": "其他祭品",
+      "rarity": "普通"
+    },
+    {
+      "slug": "T_UI_iconsFavors_shroudOfVanishing",
+      "file": "Favors/Ketchup/T_UI_iconsFavors_shroudOfVanishing.png",
+      "zh": "消失的遮蔽斗篷",
+      "effect": "开局隐藏气息与痕迹一段时间。",
+      "cat": "其他祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "jarOfSaltyLips",
+      "file": "Favors/iconFavors_jarOfSaltyLips.png",
+      "zh": "腌嘴唇罐",
+      "effect": "提升地下室出现概率。",
+      "cat": "其他祭品",
+      "rarity": "非常稀有"
+    },
+    {
+      "slug": "saltPouch",
+      "file": "Favors/iconFavors_saltPouch.png",
+      "zh": "盐袋",
+      "effect": "增加地下室的钩子数量。",
+      "cat": "其他祭品",
+      "rarity": "罕见"
+    },
+    {
+      "slug": "shroudOfSeparation",
+      "file": "Favors/iconFavors_shroudOfSeparation.png",
+      "zh": "遮蔽斗篷 (Shroud)",
+      "effect": "其他祭品类祭品。",
+      "cat": "其他祭品",
+      "rarity": "非常稀有"
+    }
+  ]
+}

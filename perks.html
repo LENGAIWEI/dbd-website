@@ -1,0 +1,2496 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技能图鉴 | 黎明杀机资料库</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-box">
+            <a href="index.html" class="logo">黎明杀机资料库</a>
+            <div class="nav-right">
+                <nav class="nav-menu">
+                    <a href="index.html">首页</a>
+                    <a href="survivors.html">逃生者</a>
+                    <a href="killers.html">屠夫</a>
+                    <a href="perks.html" class="active">技能图鉴</a>
+                    <a href="maps.html">地图大全</a>
+                </nav>
+                <input type="text" id="headerSearch" class="header-search-input" placeholder="站内搜索…" autocomplete="off">
+            </div>
+        </div>
+        <div class="search-result-bar" id="headerSearchResult"></div>
+    </header>
+
+        <!-- 侧边导航 -->
+    <div class="side-nav" id="sideNav">
+        <div class="side-nav-title">快速导航</div>
+        <a href="#survivor-perks" class="side-nav-link">逃生者技能</a>
+        <a href="#killer-perks" class="side-nav-link">屠夫技能</a>
+        <div class="side-nav-divider"></div>
+        <div class="side-nav-title">搜索技能</div>
+        <input type="text" id="searchInput" class="search-box" placeholder="输入后按回车搜索...">
+        <div class="search-result" id="searchResult"></div>
+    </div>
+
+    <!-- 回到顶部按钮 -->
+    <button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+    <main class="container">
+        <h2 class="page-title">技能图鉴</h2>
+        <p>收录人类与屠夫全部技能，含三级效果说明。</p>
+
+        <!-- 分类筛选栏 -->
+        <div class="filter-bar">
+            <span class="filter-label">分类：</span>
+            <button class="filter-chip active" data-perk-filter="all">全部</button>
+            <button class="filter-chip" data-perk-filter="survivor">逃生者技能</button>
+            <button class="filter-chip" data-perk-filter="killer">屠夫技能</button>
+        </div>
+
+        <!-- 逃生者技能 -->
+        <div class="perk-section" id="survivor-perks">
+            <h3>逃生者技能</h3>
+            
+            <!-- 德怀特·费菲尔德 -->
+            <h4 style="color: #ffa726; margin: 25px 0 15px 0;">德怀特·费菲尔德 Dwight Fairfield</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/Dwight Fairfield - Bond.png" alt="羁绊">
+                    <div class="card-content">
+                        <h3>羁绊 Bond</h3>
+                        <p>可以看到36/48/60米范围内其他逃生者的气场。
+                        <br><br>团队协作核心技能，快速找到队友一起修机。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/Dwight Fairfield - Leader.png" alt="领袖群雄">
+                    <div class="card-content">
+                        <h3>领袖群雄 Leader</h3>
+                        <p>4米范围内每存在一名其他逃生者，所有人修机、治疗、破坏速度+15%，最多叠加3层。
+                        <br><br>Lv1:50% | Lv2:75% | Lv3:100% 合作血点加成</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/Dwight Fairfield - Prove Thyself.png" alt="证明自己">
+                    <div class="card-content">
+                        <h3>证明自己 Prove Thyself</h3>
+                        <p>每有一名其他逃生者在你附近4米内，你的修理速度增加15%，最多叠加3层。
+                        <br><br>多人修机效率惩罚减免，抱团修机神技。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 梅格·托马斯 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">梅格·托马斯 Meg Thomas</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/托马斯 - 冲刺爆发.png" alt="冲刺爆发">
+                    <div class="card-content">
+                        <h3>冲刺爆发 Sprint Burst</h3>
+                        <p>开始奔跑时触发，移动速度大幅提升，持续2秒。
+                        <br><br>冷却时间：60/50/40秒
+                        <br>转点神技，拉开距离必备。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/托马斯 - 急速静谧.png" alt="急速静谧">
+                    <div class="card-content">
+                        <h3>急速静谧 Quick & Quiet</h3>
+                        <p>快速翻越窗户或快速进入柜子时，不会发出声音提示。
+                        <br><br>冷却时间：30/25/20秒
+                        <br>溜屠夫核心技能，悄悄翻窗不被发现。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/托马斯 - 肾上腺素.png" alt="肾上腺素">
+                    <div class="card-content">
+                        <h3>肾上腺素 Adrenaline</h3>
+                        <p>当出口大门通电时，立即恢复一层健康状态，并以冲刺速度奔跑5秒。
+                        <br><br>即使你处于倒地或被挂状态也会触发。
+                        <br>开门战翻盘神技。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 克劳黛特·莫莱 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">克劳黛特·莫莱 Claudette Morel</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/克劳黛特 - 心灵共鸣.png" alt="心灵共鸣">
+                    <div class="card-content">
+                        <h3>心灵共鸣 Empathy</h3>
+                        <p>可以看到64/96/128米范围内受伤逃生者的气场。
+                        <br><br>救人位核心技能，快速找到受伤队友进行治疗。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/克劳黛特 - 精研百草.png" alt="精研百草">
+                    <div class="card-content">
+                        <h3>精研百草 Botany Knowledge</h3>
+                        <p>提高治疗速度30/40/50%，使用医疗包的效率也同步提升。
+                        <br><br>治疗速度大幅加快，快速拉满队友状态。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/克劳黛特 - 自我疗愈.png" alt="自我疗愈">
+                    <div class="card-content">
+                        <h3>自我疗愈 Self-Care</h3>
+                        <p>可以不用医疗包进行自我治疗，治疗速度为正常的50%。
+                        <br><br>有医疗包时治疗速度额外提升20/30/40%。
+                        <br>单排神技，自己摸自己。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 杰克·帕克 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">杰克·帕克 Jake Park</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/朴杰克 - 钢铁意志.png" alt="钢铁意志">
+                    <div class="card-content">
+                        <h3>钢铁意志 Iron Will</h3>
+                        <p>受伤时的呻吟声降低50/75/100%。
+                        <br><br>溜屠夫神技，受伤后不发出声音，屠夫很难定位你。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/朴杰克 - 安抚生灵.png" alt="安抚生灵">
+                    <div class="card-content">
+                        <h3>安抚生灵 Calm Spirit</h3>
+                        <p>减少80/90/100%的动物惊吓反应。
+                        <br><br>不会惊飞乌鸦，避免暴露位置。
+                        <br>安静流核心技能。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/朴杰克 - 破坏手.png" alt="破坏手">
+                    <div class="card-content">
+                        <h3>破坏手 Saboteur</h3>
+                        <p>可以不用工具箱破坏钩子，破坏速度为正常的50%。
+                        <br><br>有工具箱时破坏速度额外提升20/30/40%。
+                        <br>守尸克制技能。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 妮娅·卡尔森 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">妮娅·卡尔森 Nea Karlsson</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/妮娅 - 平稳着陆.png" alt="平稳着陆">
+                    <div class="card-content">
+                        <h3>平稳着陆 Balanced Landing</h3>
+                        <p>从高处落下时不会受伤，落地后冲刺速度提升，持续3秒。
+                        <br><br>冷却时间：60/50/40秒
+                        <br>高低差地图溜屠夫神技。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/妮娅 - 暴走族.png" alt="暴走族">
+                    <div class="card-content">
+                        <h3>暴走族 Streetwise</h3>
+                        <p>你和附近的队友消耗物品的速度降低10/15/20%。
+                        <br><br>范围：32米
+                        <br>省道具神技，工具箱、手电筒、医疗包更耐用。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/妮娅 - 都市生存.png" alt="都市生存">
+                    <div class="card-content">
+                        <h3>都市生存 Dead Hard</h3>
+                        <p>受伤状态下，向前冲刺时可以触发一次无敌帧，躲过一次攻击。
+                        <br><br>冷却时间：60/50/40秒
+                        <br>溜屠夫最强技能之一，极限躲刀。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 劳丽·斯特罗德 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">劳丽·斯特罗德 Laurie Strode</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/劳丽 - 最后的生还者.png" alt="最后的生还者">
+                    <div class="card-content">
+                        <h3>最后的生还者 Sole Survivor</h3>
+                        <p>每有一名逃生者被杀死或献祭，你获得一层印记：
+                        <br>每层使你被气场解读的距离降低25/50/75%。
+                        <br>独狼流核心技能。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/劳丽 - 魂牵梦绕.png" alt="魂牵梦绕">
+                    <div class="card-content">
+                        <h3>魂牵梦绕 Object of Obsession</h3>
+                        <p>当屠夫能看到你的气场时，你也能看到屠夫的气场。
+                        <br><br>你修理、治疗、破坏速度增加3/6/9%。
+                        <br>溜屠夫信息位神技。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/劳丽 - 果断反击.png" alt="果断反击">
+                    <div class="card-content">
+                        <h3>果断反击 Decisive Strike</h3>
+                        <p>被放下后60秒内，再次被抱起时可以触发QTE，成功则挣脱。
+                        <br><br>冷却：40/50/60秒
+                        <br>防针对神技，俗称"打击"。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 埃斯·维斯孔蒂 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">埃斯·维斯孔蒂 Ace Visconti</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/埃斯 - 锦囊妙计.png" alt="锦囊妙计">
+                    <div class="card-content">
+                        <h3>锦囊妙计 Ace in the Hole</h3>
+                        <p>开启箱子时，有50/75/100%几率额外获得一个物品附加品。
+                        <br><br>摸宝流核心技能，开箱子出好东西。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/埃斯 - 稳操胜券.png" alt="稳操胜券">
+                    <div class="card-content">
+                        <h3>稳操胜券 Open-Handed</h3>
+                        <p>增加你和附近队友气场解读能力的范围8/12/16米。
+                        <br><br>范围：32米
+                        <br>辅助队友看得更远。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/埃斯 - 好运会传染.png" alt="好运会传染">
+                    <div class="card-content">
+                        <h3>好运会传染 Lucky Break</h3>
+                        <p>受伤后进入流血状态的时间延长60/90/120秒。
+                        <br><br>延长不流血时间，给你更多治疗窗口。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 比尔·奥弗贝克 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">威廉·"比尔"·奥弗贝克 Bill Overbeck</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/比尔 - 坚不可摧.png" alt="坚不可摧">
+                    <div class="card-content">
+                        <h3>坚不可摧 Unbreakable</h3>
+                        <p>倒地状态下可以自我恢复到濒死状态，每场游戏限一次。
+                        <br><br>倒地恢复速度提高35/40/45%。
+                        <br>翻盘神技，俗称"自起"。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/比尔 - 末日残兵.png" alt="末日残兵">
+                    <div class="card-content">
+                        <h3>末日残兵 Tenacious</h3>
+                        <p>倒地状态下，爬行速度提高30/40/50%。
+                        <br><br>倒地后爬得更快，更容易爬到安全位置。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/比尔 - 时不我待.png" alt="时不我待">
+                    <div class="card-content">
+                        <h3>时不我待 Borrowed Time</h3>
+                        <p>从钩子上救下队友后，队友获得10/12/15秒的深伤状态。
+                        <br><br>深伤状态下被攻击不会倒地，给队友转点时间。
+                        <br>救人位必备神技，俗称"怀表"。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 凤敏 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">凤敏 Feng Min</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/凤敏 - 技术员.png" alt="技术员">
+                    <div class="card-content">
+                        <h3>技术员 Technician</h3>
+                        <p>修理发电机时有40/50/60%几率不会触发技能检验。
+                        <br><br>即使触发失败，爆炸声音范围也会减小。
+                        <br>修机稳，不容易炸机。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/凤敏 - 轻盈敏捷.png" alt="轻盈敏捷">
+                    <div class="card-content">
+                        <h3>轻盈敏捷 Lithe</h3>
+                        <p>快速翻越窗户后，触发冲刺加速，持续3秒。
+                        <br><br>冷却时间：60/50/40秒
+                        <br>转点神技，翻窗直接拉距离。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/凤敏 - 警戒.png" alt="警戒">
+                    <div class="card-content">
+                        <h3>警戒 Alert</h3>
+                        <p>当屠夫踢板子、踢发电机、破坏东西时，你可以看到屠夫的气场。
+                        <br><br>持续时间：4/5/6秒
+                        <br>信息位技能，知道屠夫在干嘛。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 大卫·金 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">大卫·金 David King</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/大卫 - 不痛不痒.png" alt="不痛不痒">
+                    <div class="card-content">
+                        <h3>不痛不痒 No Mither</h3>
+                        <p>你永远处于受伤状态，不会流血，倒地恢复速度提高50%。
+                        <br><br>你发出的呻吟声降低0/25/50%。
+                        <br>特殊玩法，全程一血但不流血。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/大卫 - 生死与共.png" alt="生死与共">
+                    <div class="card-content">
+                        <h3>生死与共 We're Gonna Live Forever</h3>
+                        <p>每次安全救人、挡刀、治疗队友，获得一层印记。
+                        <br><br>每层印记使你获得的血点增加25%，最多4层(+100%)。
+                        <br>刷血点神技。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/大卫 - 钢筋铁骨.png" alt="钢筋铁骨">
+                    <div class="card-content">
+                        <h3>钢筋铁骨 Mettle of Man</h3>
+                        <p>每次你在屠夫附近保护队友，获得一层印记，共3层。
+                        <br><br>叠满后，下次攻击你会免疫一次伤害。
+                        <br>保护流核心技能。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 昆汀·史密斯 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">昆汀·史密斯 Quentin Smith</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/昆汀 - 醒醒.png" alt="醒醒">
+                    <div class="card-content">
+                        <h3>醒醒 Wake Up!</h3>
+                        <p>你可以看到出口大门的气场，开门速度提高5/10/15%。
+                        <br><br>附近的队友开门速度也同步提升。
+                        <br>开门战技能，快速开门。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/昆汀 - 药到病除.png" alt="药到病除">
+                    <div class="card-content">
+                        <h3>药到病除 Vigil</h3>
+                        <p>你和附近队友的负面状态持续时间减少10/15/20%。
+                        <br><br>范围：32米
+                        <br>加速恢复疲劳、出血、重伤等状态。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/昆汀 - 守夜人.png" alt="守夜人">
+                    <div class="card-content">
+                        <h3>守夜人 Dream Walker</h3>
+                        <p>在梦境中移动速度更快，从梦境中醒来的时间更短。
+                        <br><br>对抗弗莱迪的专属技能。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 大卫·泰普 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">大卫·泰普探长 Detective Tapp</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/泰普 - 警探直觉.png" alt="警探直觉">
+                    <div class="card-content">
+                        <h3>警探直觉 Detective's Hunch</h3>
+                        <p>修完一台发电机后，可以看到32/48/64米范围内发电机、箱子、图腾的气场。
+                        <br><br>持续10秒
+                        <br>找图腾、找箱子神技。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/泰普 - 破案心切.png" alt="破案心切">
+                    <div class="card-content">
+                        <h3>破案心切 Stake Out</h3>
+                        <p>站在屠夫气场内不动，每15秒获得一层印记，最多3/4/5层。
+                        <br><br>每层印记可以让一次技能检验自动成功。
+                        <br>修机稳，不怕炸机。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/泰普 - 永不言弃.png" alt="永不言弃">
+                    <div class="card-content">
+                        <h3>永不言弃 Tenacity</h3>
+                        <p>倒地状态下可以缓慢恢复进度，爬行速度提高30/40/50%。
+                        <br><br>倒地后慢慢自摸，配合自起更强。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 凯特·登森 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">凯特·登森 Kate Denson</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/凯特 - 与我共舞.png" alt="与我共舞">
+                    <div class="card-content">
+                        <h3>与我共舞 Dance With Me</h3>
+                        <p>快速进入或离开柜子后，你不会留下划痕，持续3/4/5秒。
+                        <br><br>冷却时间：60/50/40秒
+                        <br>柜皇流核心技能。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/凯特 - 机遇之窗.png" alt="机遇之窗">
+                    <div class="card-content">
+                        <h3>机遇之窗 Windows of Opportunity</h3>
+                        <p>可以看到20/28/36米范围内窗户和板子的气场。
+                        <br><br>溜屠夫神技，提前知道哪里有板哪里有窗。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/凯特 - 脱缰野马.png" alt="脱缰野马">
+                    <div class="card-content">
+                        <h3>脱缰野马 Boil Over</h3>
+                        <p>被屠夫抱着时，左右摇晃的幅度增加25/50/75%。
+                        <br><br>同时你可以看到钩子的气场。
+                        <br>挣扎流技能，让屠夫抱不稳。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 亚当·弗朗西斯 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">亚当·弗朗西斯 Adam Francis</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/亚当 - 自学成才.png" alt="自学成才">
+                    <div class="card-content">
+                        <h3>自学成才 Autodidact</h3>
+                        <p>每次成功完成治疗技能检验，获得一层印记，最多3/4/5层。
+                        <br><br>每层印记使治疗进度额外增加15%。
+                        <br>玩得好就是神级治疗技能。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/亚当 - 声东击西.png" alt="声东击西">
+                    <div class="card-content">
+                        <h3>声东击西 Deliverance</h3>
+                        <p>只要你安全救过一次人，你就可以自己从钩子上挣脱下来。
+                        <br><br>每场游戏限一次。
+                        <br>自救神技，自己救自己。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/亚当 - 善有善报.png" alt="善有善报">
+                    <div class="card-content">
+                        <h3>善有善报 Distortion</h3>
+                        <p>当屠夫触发气场解读技能时，你获得一层印记，最多3层。
+                        <br><br>每层印记可以让你一次不被屠夫看到气场。
+                        <br>反信息位技能。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 杰夫·约翰森 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">杰夫·约翰森 Jeff Johansen</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/杰夫 - 劫后余生.png" alt="劫后余生">
+                    <div class="card-content">
+                        <h3>劫后余生 Aftercare</h3>
+                        <p>每次你救了人或被救，你和对方可以互相看到气场，跨整张地图。
+                        <br><br>最多可以标记1/2/3个人。
+                        <br>团队信息位技能。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/杰夫 - 分崩离析.png" alt="分崩离析">
+                    <div class="card-content">
+                        <h3>分崩离析 Breakdown</h3>
+                        <p>你被从钩子上救下来时，附近的钩子会被破坏，持续180秒。
+                        <br><br>范围：16/20/24米
+                        <br>克制守尸，破坏周围钩子。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/杰夫 - 气场失真.png" alt="气场失真">
+                    <div class="card-content">
+                        <h3>气场失真 For The People</h3>
+                        <p>健康状态下，可以把自己的健康状态转移给受伤的队友。
+                        <br><br>同时你获得10秒的坚忍状态。
+                        <br>保护队友神技。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 简·罗梅罗 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">简·罗梅罗 Jane Romero</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/简 - 蓄势待发.png" alt="蓄势待发">
+                    <div class="card-content">
+                        <h3>蓄势待发 Head On</h3>
+                        <p>在柜子里待满3秒后，快速出柜可以眩晕附近的屠夫3秒。
+                        <br><br>冷却时间：100/80/60秒
+                        <br>柜皇神技，出柜撞晕屠夫。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/简 - 团结一致.png" alt="团结一致">
+                    <div class="card-content">
+                        <h3>团结一致 Solidarity</h3>
+                        <p>治疗队友时，你自己也会同步获得治疗进度。
+                        <br><br>治疗效率为正常的33/66/100%。
+                        <br>互相治疗，一起回血。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/简 - 勇往直前.png" alt="勇往直前">
+                    <div class="card-content">
+                        <h3>勇往直前 Self-Preservation</h3>
+                        <p>当附近的队友被击中时，你受伤后不会流血，持续7/8/9秒。
+                        <br><br>范围：32米
+                        <br>队友挨刀你也有好处。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 阿什利·威廉姆斯 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">阿什利·"阿什"·威廉姆斯 Ash Williams</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/阿什利 - 未雨绸缪.png" alt="未雨绸缪">
+                    <div class="card-content">
+                        <h3>未雨绸缪 Flip-Flop</h3>
+                        <p>倒地状态下，50%的挣扎进度会转化为自起进度。
+                        <br><br>反之亦然。
+                        <br>倒地快爬满了，被抱起来直接挣扎下来。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/阿什利 - 并行进展.png" alt="并行进展">
+                    <div class="card-content">
+                        <h3>并行进展 Buckle Up</h3>
+                        <p>你可以看到倒地队友的气场，抱起队友时，队友获得坚忍状态。
+                        <br><br>坚忍持续时间：4/6/8秒
+                        <br>抱起队友给保护。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/阿什利 - 人之勇气.png" alt="人之勇气">
+                    <div class="card-content">
+                        <h3>人之勇气 Mettle of Man</h3>
+                        <p>每次你在屠夫附近保护队友，获得一层印记，共3层。
+                        <br><br>叠满后，下次攻击你会免疫一次伤害。
+                        <br>保护流核心技能。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 木村唯 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">木村唯 Yui Kimura</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/木村唯 - 幸运喘息.png" alt="幸运喘息">
+                    <div class="card-content">
+                        <h3>幸运喘息 Lucky Break</h3>
+                        <p>受伤后进入流血状态的时间延长60/90/120秒。
+                        <br><br>延长不流血时间，给你更多治疗窗口。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/木村唯 - 挣脱激励.png" alt="挣脱激励">
+                    <div class="card-content">
+                        <h3>挣脱激励 Any Means Necessary</h3>
+                        <p>可以把被屠夫踢掉的板子重新扶起来。
+                        <br><br>冷却时间：140/120/100秒
+                        <br>溜屠夫神技，板子反复用。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/木村唯 - 不惜一切.png" alt="不惜一切">
+                    <div class="card-content">
+                        <h3>不惜一切 Resilience</h3>
+                        <p>受伤状态下，所有动作速度提高3/6/9%。
+                        <br><br>修机、治疗、翻窗、开箱子都加速。
+                        <br>一血流核心技能。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 扎里娜·卡西尔 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">扎里娜·卡西尔 Zarina Kassir</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/萨丽娜 - 非正式调查.png" alt="非正式调查">
+                    <div class="card-content">
+                        <h3>非正式调查 Detective's Hunch</h3>
+                        <p>修完一台发电机后，可以看到范围内发电机、箱子、图腾的气场。
+                        <br><br>找图腾、找箱子神技。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/萨丽娜 - 舍己为人.png" alt="舍己为人">
+                    <div class="card-content">
+                        <h3>舍己为人 For The People</h3>
+                        <p>健康状态下，可以把自己的健康状态转移给受伤的队友。
+                        <br><br>同时你获得坚忍状态。
+                        <br>保护队友神技。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/萨丽娜 - 转移注意.png" alt="转移注意">
+                    <div class="card-content">
+                        <h3>转移注意 Off The Record</h3>
+                        <p>被从钩子上救下来后，你不会留下划痕，也不会发出声音。
+                        <br><br>持续时间：60/70/80秒
+                        <br>下钩后隐身溜屠夫。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 谢丽尔·梅森 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">谢丽尔·梅森 Cheryl Mason</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/谢丽尔 - 灵魂守卫.png" alt="灵魂守卫">
+                    <div class="card-content">
+                        <h3>灵魂守卫 Soul Guard</h3>
+                        <p>处于终局游戏时，你可以自我恢复到濒死状态。
+                        <br><br>同时你被诅咒时，倒地恢复速度提高50%。
+                        <br>开门战自起神技。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/谢丽尔 - 鲜血契约.png" alt="鲜血契约">
+                    <div class="card-content">
+                        <h3>鲜血契约 Blood Pact</h3>
+                        <p>你和 obsession（执念对象）可以互相看到气场。
+                        <br><br>在一起时，两人移动速度提高3/4/5%。
+                        <br>双人溜屠夫技能。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/谢丽尔 - 压抑同盟.png" alt="压抑同盟">
+                    <div class="card-content">
+                        <h3>压抑同盟 Repressed Alliance</h3>
+                        <p>修机修满80秒后，可以激活技能，让发电机被屠夫踢了不会倒退。
+                        <br><br>持续时间：30/35/40秒
+                        <br>克制踢机流屠夫。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 菲力克斯·里克特 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">菲力克斯·里克特 Felix Richter</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/菲力克斯 - 远见卓识.png" alt="远见卓识">
+                    <div class="card-content">
+                        <h3>远见卓识 Visionary</h3>
+                        <p>你可以看到32/40/48米范围内发电机的气场。
+                        <br><br>修机党福音，快速找到发电机。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/菲力克斯 - 绝境对策.png" alt="绝境对策">
+                    <div class="card-content">
+                        <h3>绝境对策 Desperate Measures</h3>
+                        <p>每有一名受伤、倒地或被挂的队友，你的治疗和救人速度提高。
+                        <br><br>每层+10/12/14%，最多4层。
+                        <br>残局救人治疗加速。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/菲力克斯 - 经久耐用.png" alt="经久耐用">
+                    <div class="card-content">
+                        <h3>经久耐用 Built to Last</h3>
+                        <p>你的物品用完后，会隐藏起来，一段时间后恢复一部分耐久。
+                        <br><br>恢复比例：30/40/50%
+                        <br>道具可以反复用。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 伊洛迪·拉科托 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">伊洛迪·拉科托 Élodie Rakoto</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/伊洛迪 - 兵不厌诈.png" alt="兵不厌诈">
+                    <div class="card-content">
+                        <h3>兵不厌诈 Appraisal</h3>
+                        <p>开箱子速度加快40/60/80%，并且可以看到箱子里物品的气场。
+                        <br><br>摸宝流核心技能，快速开箱子。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/伊洛迪 - 强力挣扎.png" alt="强力挣扎">
+                    <div class="card-content">
+                        <h3>强力挣扎 Power Struggle</h3>
+                        <p>被抱着时，只要挣扎进度到55/50/45%，就可以触发砸板子晕屠夫。
+                        <br><br>配合 Flip-Flop 效果更佳。
+                        <br>挣扎流神技。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/伊洛迪 - 明察秋毫.png" alt="明察秋毫">
+                    <div class="card-content">
+                        <h3>明察秋毫 Counterforce</h3>
+                        <p>拆图腾速度提高20/30/40%，拆完后可以看到下一个图腾的气场。
+                        <br><br>范围：24米
+                        <br>找图腾拆图腾神技。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 李允珍 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">李允珍 Yun-Jin Lee</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/李允珍 - 成功捷径.png" alt="成功捷径">
+                    <div class="card-content">
+                        <h3>成功捷径 Fast Track</h3>
+                        <p>每次有队友被挂，你获得2/3/4层印记。
+                        <br><br>每次技能检验成功，消耗一层印记，额外+1%修机进度。
+                        <br>队友被挂你修机更快。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/李允珍 - 轰动演出.png" alt="轰动演出">
+                    <div class="card-content">
+                        <h3>轰动演出 Smash Hit</h3>
+                        <p>用板子砸晕屠夫后，你获得冲刺加速，持续3秒。
+                        <br><br>冷却时间：60/50/40秒
+                        <br>砸板直接拉距离。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/李允珍 - 自我保护.png" alt="自我保护">
+                    <div class="card-content">
+                        <h3>自我保护 Self-Preservation</h3>
+                        <p>当附近的队友被击中时，你受伤后不会流血，持续一段时间。
+                        <br><br>队友挨刀你也有好处。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 吉尔·瓦伦蒂安 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">吉尔·瓦伦蒂安 Jill Valentine</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/吉尔 - 爆炸地雷.png" alt="爆炸地雷">
+                    <div class="card-content">
+                        <h3>爆炸地雷 Blast Mine</h3>
+                        <p>修机修满66%后，可以在发电机上装一个地雷。
+                        <br><br>屠夫踢机时会被炸瞎并被推开。
+                        <br>整活神技，炸瞎屠夫。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/吉尔 - 反制之力.png" alt="反制之力">
+                    <div class="card-content">
+                        <h3>反制之力 Counterforce</h3>
+                        <p>拆图腾速度提高，拆完后可以看到下一个图腾的气场。
+                        <br><br>找图腾拆图腾神技。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/吉尔 - 东山再起.png" alt="东山再起">
+                    <div class="card-content">
+                        <h3>东山再起 Resilience</h3>
+                        <p>受伤状态下，所有动作速度提高3/6/9%。
+                        <br><br>修机、治疗、翻窗都加速。
+                        <br>一血流核心技能。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 里昂·肯尼迪 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">里昂·斯科特·肯尼迪 Leon S. Kennedy</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/里昂 - 闪光弹.png" alt="闪光弹">
+                    <div class="card-content">
+                        <h3>闪光弹 Flashbang</h3>
+                        <p>修机修满70%后，可以进入柜子制作一个闪光弹。
+                        <br><br>扔出去可以炸瞎屠夫。
+                        <br>整活神技，自带闪光弹。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/里昂 - 咬紧牙关.png" alt="咬紧牙关">
+                    <div class="card-content">
+                        <h3>咬紧牙关 Bite the Bullet</h3>
+                        <p>治疗时不会发出声音，技能检验失败也不会爆炸。
+                        <br><br>安静治疗，不会被屠夫发现。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/里昂 - 新人精神.png" alt="新人精神">
+                    <div class="card-content">
+                        <h3>新人精神 Rookie Spirit</h3>
+                        <p>每次你完成一次治疗，获得一层印记，共5层。
+                        <br><br>叠满后可以看到所有发电机的气场。
+                        <br>治疗叠层数找发电机。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 米凯拉·里德 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">米凯拉·里德 Mikaela Reid</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/米凯拉 - 恩赐：治疗之环.png" alt="恩赐：治疗之环">
+                    <div class="card-content">
+                        <h3>恩赐：治疗之环 Boon: Circle of Healing</h3>
+                        <p>可以把普通图腾变成祝福图腾。
+                        <br><br>祝福图腾范围内，所有人治疗速度大幅提升。
+                        <br>治疗流核心技能，俗称"蘑菇"。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/米凯拉 - 恩赐：暗影步.png" alt="恩赐：暗影步">
+                    <div class="card-content">
+                        <h3>恩赐：暗影步 Boon: Shadow Step</h3>
+                        <p>祝福图腾范围内，所有人不会留下划痕，也不会被气场解读。
+                        <br><br>溜屠夫神技，在范围内隐身。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/米凯拉 - 千里眼.png" alt="千里眼">
+                    <div class="card-content">
+                        <h3>千里眼 Clairvoyance</h3>
+                        <p>当你没有物品时，可以看到发电机、箱子、大门、钩子的气场。
+                        <br><br>空手套白狼，信息位神技。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 约拿·巴斯克斯 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">约拿·巴斯克斯 Jonah Vasquez</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/约拿 - 矫正措施.png" alt="矫正措施">
+                    <div class="card-content">
+                        <h3>矫正措施 Corrective Action</h3>
+                        <p>你每次成功的技能检验，获得一层印记，最多3/4/5层。
+                        <br><br>队友技能检验失败时，消耗一层印记帮他自动成功。
+                        <br>带萌新神器，帮队友挡炸机。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/约拿 - 克服难关.png" alt="克服难关">
+                    <div class="card-content">
+                        <h3>克服难关 Overcome</h3>
+                        <p>被击中后，你可以多跑两步才进入受伤减速。
+                        <br><br>额外冲刺持续时间：0.5/0.75/1秒
+                        <br>挨刀后多拉一点距离。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/约拿 - 恩赐：指数增长.png" alt="恩赐：指数增长">
+                    <div class="card-content">
+                        <h3>恩赐：指数增长 Boon: Exponential</h3>
+                        <p>祝福图腾范围内，倒地自起速度大幅提升。
+                        <br><br>倒地队友在范围内可以快速自起。
+                        <br>倒地流核心祝福。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 浅川洋一 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">浅川洋一 Yoichi Asakawa</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/阳一 - 感同身受.png" alt="感同身受">
+                    <div class="card-content">
+                        <h3>感同身受 Empathic Connection</h3>
+                        <p>你可以看到受伤队友的气场，受伤队友也能看到你的气场。
+                        <br><br>互相找到对方，快速治疗。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/阳一 - 亡父警言.png" alt="亡父警言">
+                    <div class="card-content">
+                        <h3>亡父警言 Resilience</h3>
+                        <p>受伤状态下，所有动作速度提高。
+                        <br><br>一血流核心技能。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/阳一 - 恩赐：黑暗理论.png" alt="恩赐：黑暗理论">
+                    <div class="card-content">
+                        <h3>恩赐：黑暗理论 Boon: Dark Theory</h3>
+                        <p>祝福图腾范围内，所有人移动速度提高2/3/4%。
+                        <br><br>溜屠夫加速，在范围内跑得更快。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 哈迪·考尔 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">哈迪·考尔 Haddie Kaur</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/海蒂 - 余光长存.png" alt="余光长存">
+                    <div class="card-content">
+                        <h3>余光长存 Overcome</h3>
+                        <p>被击中后，你可以多跑两步才进入受伤减速。
+                        <br><br>挨刀后多拉一点距离。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/海蒂 - 内在专注.png" alt="内在专注">
+                    <div class="card-content">
+                        <h3>内在专注 Inner Focus</h3>
+                        <p>你不流血时，技能检验成功区域变大，失败区域变小。
+                        <br><br>修机更稳，不容易炸机。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/海蒂 - 急于求成.png" alt="急于求成">
+                    <div class="card-content">
+                        <h3>急于求成 Situational Awareness</h3>
+                        <p>你可以看到正在修理的发电机的气场，以及修机队友的气场。
+                        <br><br>团队信息位，知道谁在修机。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 艾达·王 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">艾达·王 Ada Wong</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/艾达 - 窃听器.png" alt="窃听器">
+                    <div class="card-content">
+                        <h3>窃听器 Wiretap</h3>
+                        <p>修机修满66%后，可以在发电机上装一个窃听器。
+                        <br><br>屠夫靠近发电机时，你会收到提示。
+                        <br>守机信息位，知道屠夫来了。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/艾达 - 低调行事.png" alt="低调行事">
+                    <div class="card-content">
+                        <h3>低调行事 Low Profile</h3>
+                        <p>当你是最后一个健康的逃生者时，你不会留下划痕。
+                        <br><br>独狼溜屠夫神技，不留下痕迹。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/艾达 - 对策治疗.png" alt="对策治疗">
+                    <div class="card-content">
+                        <h3>对策治疗 Saboteur</h3>
+                        <p>可以不用工具箱破坏钩子，有钩子气场提示。
+                        <br><br>守尸克制技能。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 蕾贝卡·钱伯斯 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">蕾贝卡·钱伯斯 Rebecca Chambers</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/蕾贝卡 - 聚精会神.png" alt="聚精会神">
+                    <div class="card-content">
+                        <h3>聚精会神 Botany Knowledge</h3>
+                        <p>提高治疗速度，使用医疗包的效率也同步提升。
+                        <br><br>治疗速度大幅加快。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/蕾贝卡 - 焕然一新.png" alt="焕然一新">
+                    <div class="card-content">
+                        <h3>焕然一新 Adrenaline</h3>
+                        <p>当出口大门通电时，立即恢复一层健康状态，并冲刺奔跑。
+                        <br><br>开门战翻盘神技。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/蕾贝卡 - 定心丸.png" alt="定心丸">
+                    <div class="card-content">
+                        <h3>定心丸 Guardian</h3>
+                        <p>你救下的队友获得坚忍状态，并且你可以看到屠夫的气场。
+                        <br><br>救人后给保护，还能看到屠夫位置。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 维托里奥·托斯卡诺 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">维托里奥·托斯卡诺 Vittorio Toscano</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/维托里奥 - 迷雾慧眼.png" alt="迷雾慧眼">
+                    <div class="card-content">
+                        <h3>迷雾慧眼 Visionary</h3>
+                        <p>你可以看到范围内发电机的气场。
+                        <br><br>快速找到发电机，修机党福音。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/维托里奥 - 潜力无限.png" alt="潜力无限">
+                    <div class="card-content">
+                        <h3>潜力无限 Fast Recovery</h3>
+                        <p>治疗速度提高，并且可以把治疗进度转化为自起进度。
+                        <br><br>治疗自己更快。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/维托里奥 - 快速策略.png" alt="快速策略">
+                    <div class="card-content">
+                        <h3>快速策略 Pragmatism</h3>
+                        <p>开箱子速度加快，并且有几率获得更好的物品。
+                        <br><br>摸宝流技能。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 塔丽塔·莱拉 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">塔丽塔·莱拉 Thalita Lyra</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/塔丽塔 - 团队合作：二人之力.png" alt="团队合作：二人之力">
+                    <div class="card-content">
+                        <h3>团队合作：二人之力 Teamwork: Power of Two</h3>
+                        <p>和队友靠近时，两人都获得移动速度加成。
+                        <br><br>双人溜屠夫，一起跑得更快。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/塔丽塔 - 友谊赛.png" alt="友谊赛">
+                    <div class="card-content">
+                        <h3>友谊赛 Made For This</h3>
+                        <p>受伤状态下移动速度提高3%，并且挨刀后有坚忍。
+                        <br><br>溜屠夫神技，受伤跑得更快。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/塔丽塔 - 当机立断.png" alt="当机立断">
+                    <div class="card-content">
+                        <h3>当机立断 Lithe</h3>
+                        <p>快速翻越窗户后，触发冲刺加速，持续3秒。
+                        <br><br>转点神技，翻窗直接拉距离。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 雷纳托·莱拉 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">雷纳托·莱拉 Renato Lyra</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/雷纳托 - 团队合作：全体隐蔽.png" alt="团队合作：全体隐蔽">
+                    <div class="card-content">
+                        <h3>团队合作：全体隐蔽 Teamwork: Collective Stealth</h3>
+                        <p>和队友靠近时，两人都不会被气场解读。
+                        <br><br>双人一起走，屠夫看不到你们。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/雷纳托 - 幕后玩家.png" alt="幕后玩家">
+                    <div class="card-content">
+                        <h3>幕后玩家 Background Player</h3>
+                        <p>当屠夫抱起队友时，你获得冲刺加速，持续几秒。
+                        <br><br>救人位赶路神技，快速冲过去救人。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/雷纳托 - 滴血冲刺.png" alt="滴血冲刺">
+                    <div class="card-content">
+                        <h3>滴血冲刺 Adrenaline</h3>
+                        <p>当出口大门通电时，立即恢复一层健康状态，并冲刺奔跑。
+                        <br><br>开门战翻盘神技。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 加布里埃尔·索马 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">加布里埃尔·索马 Gabriel Soma</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/加布里埃尔 - 为生而生.png" alt="为生而生">
+                    <div class="card-content">
+                        <h3>为生而生 Made For This</h3>
+                        <p>受伤状态下移动速度提高3%，并且挨刀后有坚忍。
+                        <br><br>溜屠夫神技，受伤跑得更快。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/加布里埃尔 - 清道夫.png" alt="清道夫">
+                    <div class="card-content">
+                        <h3>清道夫 Scavenger</h3>
+                        <p>你可以从地上捡起物品零件，组装成一个完整的物品。
+                        <br><br>捡破烂流，白嫖道具。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/加布里埃尔 - 答疑解惑.png" alt="答疑解惑">
+                    <div class="card-content">
+                        <h3>答疑解惑 Deliverance</h3>
+                        <p>只要你安全救过一次人，你就可以自己从钩子上挣脱下来。
+                        <br><br>自救神技，自己救自己。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 尼古拉斯·凯奇 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">尼古拉斯·凯奇 Nicolas Cage</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/凯奇 - 即兴表演.png" alt="即兴表演">
+                    <div class="card-content">
+                        <h3>即兴表演 Dramaturgy</h3>
+                        <p>受伤状态下奔跑时激活，随机获得一种效果：冲刺加速、隐身、坚忍等。
+                        <br><br>赌狗技能，随机效果很欢乐。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/凯奇 - 联袂主演.png" alt="联袂主演">
+                    <div class="card-content">
+                        <h3>联袂主演 Scene Partner</h3>
+                        <p>盯着屠夫看时，你和屠夫都能互相看到对方气场。
+                        <br><br>溜屠夫信息位，对视就知道位置。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/凯奇 - 跌宕剧情.png" alt="跌宕剧情">
+                    <div class="card-content">
+                        <h3>跌宕剧情 Plot Twist</h3>
+                        <p>健康状态下可以主动倒地，然后可以完全自起一次。
+                        <br><br>装死流神技，假装倒地然后突然起来。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 艾伦·雷普利 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">艾伦·雷普利 Ellen Ripley</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/蕾普利 - 化学陷阱.png" alt="化学陷阱">
+                    <div class="card-content">
+                        <h3>化学陷阱 Chemical Trap</h3>
+                        <p>可以在地上放置化学陷阱，屠夫踩中会被减速。
+                        <br><br>溜屠夫陷阱流。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/蕾普利 - 幸运星.png" alt="幸运星">
+                    <div class="card-content">
+                        <h3>幸运星 Lucky Star</h3>
+                        <p>进入柜子后短暂隐身，出来后也有几秒隐身。
+                        <br><br>柜皇流技能，进柜出柜都隐身。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/蕾普利 - 轻盈猫步.png" alt="轻盈猫步">
+                    <div class="card-content">
+                        <h3>轻盈猫步 Lightweight</h3>
+                        <p>你留下的划痕持续时间更短，消失得更快。
+                        <br><br>溜屠夫技能，屠夫不容易跟着划痕找你。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 通用技能 -->
+            <h4 style="color: #ffa726; margin: 40px 0 15px 0;">通用技能</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 不祥预感.png" alt="不祥预感">
+                    <div class="card-content">
+                        <h3>不祥预感 Premonition</h3>
+                        <p>当屠夫在你前方一定范围内时，你会收到提示。
+                        <br><br>预警技能，知道屠夫在附近。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 似曾相识.png" alt="似曾相识">
+                    <div class="card-content">
+                        <h3>似曾相识 Déjà Vu</h3>
+                        <p>游戏开始时，可以看到3台发电机的气场，持续几秒。
+                        <br><br>开局快速找到发电机。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 内心治疗.png" alt="内心治疗">
+                    <div class="card-content">
+                        <h3>内心治疗 Inner Healing</h3>
+                        <p>拆一个图腾后，你可以进入柜子快速治疗自己。
+                        <br><br>拆图腾换一次自摸。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 同志情谊.png" alt="同志情谊">
+                    <div class="card-content">
+                        <h3>同志情谊 Camaraderie</h3>
+                        <p>被挂在钩子上时，挣扎进度暂停一段时间。
+                        <br><br>给队友更多时间来救你。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 同族.png" alt="同族">
+                    <div class="card-content">
+                        <h3>同族 Kindred</h3>
+                        <p>有人被挂时，所有人都能看到屠夫和其他队友的气场。
+                        <br><br>团队信息位神技，救人不白给。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 同生共死.png" alt="同生共死">
+                    <div class="card-content">
+                        <h3>同生共死 We're Gonna Live Forever</h3>
+                        <p>每次安全救人、挡刀、治疗队友，获得一层印记。
+                        <br><br>每层印记使血点增加25%，最多4层。
+                        <br>刷血点神技。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 守护者.png" alt="守护者">
+                    <div class="card-content">
+                        <h3>守护者 Guardian</h3>
+                        <p>你救下的队友获得坚忍状态，并且你可以看到屠夫的气场。
+                        <br><br>救人后给保护。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 局势感知.png" alt="局势感知">
+                    <div class="card-content">
+                        <h3>局势感知 Situational Awareness</h3>
+                        <p>你可以看到正在修理的发电机的气场，以及修机队友的气场。
+                        <br><br>团队信息位。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 希冀之翼.png" alt="希冀之翼">
+                    <div class="card-content">
+                        <h3>希冀之翼 Hope</h3>
+                        <p>终局游戏时，移动速度提高2/3/4%。
+                        <br><br>开门战跑得更快。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 强盗直觉.png" alt="强盗直觉">
+                    <div class="card-content">
+                        <h3>强盗直觉 Plunderer's Instinct</h3>
+                        <p>可以看到箱子的气场，开箱子出好东西的几率更高。
+                        <br><br>摸宝流核心技能。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 暗黑感知.png" alt="暗黑感知">
+                    <div class="card-content">
+                        <h3>暗黑感知 Dark Sense</h3>
+                        <p>当屠夫完成一次杀戮动作后，你可以看到屠夫的气场几秒。
+                        <br><br>信息位技能，知道屠夫位置。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 毛骨悚然.png" alt="毛骨悚然">
+                    <div class="card-content">
+                        <h3>毛骨悚然 Spine Chill</h3>
+                        <p>当屠夫盯着你看时，你会收到提示，同时动作速度提高。
+                        <br><br>预警神技，屠夫看你你就知道。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 狩猎经验.png" alt="狩猎经验">
+                    <div class="card-content">
+                        <h3>狩猎经验 Empathy</h3>
+                        <p>可以看到受伤逃生者的气场。
+                        <br><br>救人位核心技能。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 百折不挠.png" alt="百折不挠">
+                    <div class="card-content">
+                        <h3>百折不挠 Unbreakable</h3>
+                        <p>倒地状态下可以自我恢复到濒死状态，每场游戏限一次。
+                        <br><br>翻盘神技，俗称"自起"。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 自我认知.png" alt="自我认知">
+                    <div class="card-content">
+                        <h3>自我认知 Self-Aware</h3>
+                        <p>你可以看到自己留下的划痕，走路速度提高。
+                        <br><br>知道自己留了多少痕迹。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 轻如鸿毛.png" alt="轻如鸿毛">
+                    <div class="card-content">
+                        <h3>轻如鸿毛 Lightweight</h3>
+                        <p>你留下的划痕持续时间更短，消失得更快。
+                        <br><br>溜屠夫技能。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 逃之夭夭.png" alt="逃之夭夭">
+                    <div class="card-content">
+                        <h3>逃之夭夭 Sprint Burst</h3>
+                        <p>开始奔跑时触发，移动速度大幅提升，持续3秒。
+                        <br><br>转点神技。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 重焕活力.png" alt="重焕活力">
+                    <div class="card-content">
+                        <h3>重焕活力 Vigil</h3>
+                        <p>你和附近队友的负面状态持续时间减少。
+                        <br><br>加速恢复疲劳、出血等状态。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 难以置信.png" alt="难以置信">
+                    <div class="card-content">
+                        <h3>难以置信 No One Left Behind</h3>
+                        <p>终局游戏时，救人和治疗速度大幅提高。
+                        <br><br>开门战救人治疗加速。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 马到功成.png" alt="马到功成">
+                    <div class="card-content">
+                        <h3>马到功成 Prove Thyself</h3>
+                        <p>每有一名其他逃生者在你附近，你的修理速度增加。
+                        <br><br>抱团修机神技。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 屠夫技能 -->
+        <div class="perk-section" id="killer-perks">
+            <h3>屠夫技能</h3>
+            
+            <!-- 陷阱杀手 -->
+            <h4 style="color: #9c27b0; margin: 25px 0 15px 0;">陷阱杀手 The Trapper</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/设陷者 - 恐慌降临.png" alt="恐慌降临">
+                    <div class="card-content">
+                        <h3>恐慌降临 Unnerving Presence</h3>
+                        <p>你恐惧范围内的逃生者，技能检验触发概率提高。
+                        <br><br>提高6/8/10%的技能检验触发概率。
+                        <br>修机、治疗、拆图腾都更容易炸。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/设陷者 - 所向无敌.png" alt="所向无敌">
+                    <div class="card-content">
+                        <h3>所向无敌 Brutal Strength</h3>
+                        <p>破坏板子、发电机、门的速度提高10/15/20%。
+                        <br><br>踩板更快，压迫感更强。
+                        <br>踩板流核心技能。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/设陷者 - 欣喜若狂.png" alt="欣喜若狂">
+                    <div class="card-content">
+                        <h3>欣喜若狂 Agitation</h3>
+                        <p>抱着逃生者时，移动速度提高14/16/18%，恐惧范围扩大。
+                        <br><br>抱人走得更快，快速挂人。
+                        <br>守尸流辅助技能。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 幽灵杀手 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">幽灵杀手 The Wraith</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/幽灵 - 穷追不舍.png" alt="穷追不舍">
+                    <div class="card-content">
+                        <h3>穷追不舍 Predator</h3>
+                        <p>逃生者留下的划痕更密集，更容易追踪。
+                        <br><br>划痕显示时间延长。
+                        <br>追踪流核心技能。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/幽灵 - 血气追踪.png" alt="血气追踪">
+                    <div class="card-content">
+                        <h3>血气追踪 Bloodhound</h3>
+                        <p>可以看到受伤逃生者留下的血迹，血迹更明显。
+                        <br><br>血迹显示时间延长。
+                        <br>找受伤的人更容易。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/幽灵 - 暗夜之睛.png" alt="暗夜之睛">
+                    <div class="card-content">
+                        <h3>暗夜之睛 Shadowborn</h3>
+                        <p>你的视野范围扩大，看得更宽。
+                        <br><br>视野角度增加。
+                        <br>更容易看到旁边的逃生者。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 电锯杀手 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">电锯杀手 The Hillbilly</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/农场主 - 耐力持久.png" alt="耐力持久">
+                    <div class="card-content">
+                        <h3>耐力持久 Enduring</h3>
+                        <p>被板子砸晕的时间减少30/40/50%。
+                        <br><br>抗晕能力强，不怕砸板。
+                        <br>溜屠夫克星。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/农场主 - 光明之眼.png" alt="光明之眼">
+                    <div class="card-content">
+                        <h3>光明之眼 Lightborn</h3>
+                        <p>免疫手电筒致盲，并且可以看到拿手电筒照你的人的气场。
+                        <br><br>克制手电侠，不怕照瞎。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/农场主 - 工匠.png" alt="工匠">
+                    <div class="card-content">
+                        <h3>工匠 Tinkerer</h3>
+                        <p>当发电机修到70%时，你会收到提示，并且可以无噪音移动几秒。
+                        <br><br>修机快的发电机自动报警。
+                        <br>信息位神技。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 护士 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">护士 The Nurse</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/护士 - 鸣喘感知.png" alt="鸣喘感知">
+                    <div class="card-content">
+                        <h3>鸣喘感知 Stridor</h3>
+                        <p>受伤逃生者的呼吸声更大，更容易听到。
+                        <br><br>呼吸音量提高。
+                        <br>听声辨位神技。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/护士 - 护士的呼唤.png" alt="护士的呼唤">
+                    <div class="card-content">
+                        <h3>护士的呼唤 Nurse's Calling</h3>
+                        <p>可以看到20/24/28米范围内正在治疗的逃生者的气场。
+                        <br><br>克制治疗流，有人摸就知道。
+                        <br>信息位技能。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/护士 - 死亡恐惧.png" alt="死亡恐惧">
+                    <div class="card-content">
+                        <h3>死亡恐惧 Thanatophobia</h3>
+                        <p>每有一名受伤、倒地或被挂的逃生者，所有人修机、治疗、破坏速度降低。
+                        <br><br>每层降低4/4.5/5%，最多4层。
+                        <br>多伤流核心技能。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 形状 迈克尔 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">形状 / 迈克尔·迈尔斯 The Shape</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/迈克尔 - 湮灭之光.png" alt="湮灭之光">
+                    <div class="card-content">
+                        <h3>湮灭之光 Save the Best for Last</h3>
+                        <p>每次击中不是执念对象的人，获得一层印记，最多8层。
+                        <br><br>每层减少5%擦刀时间。
+                        <br>叠满擦刀飞快。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/迈克尔 - 把最好的留在最后.png" alt="把最好的留在最后">
+                    <div class="card-content">
+                        <h3>把最好的留在最后 Play with Your Food</h3>
+                        <p>每次你追的人跑掉了，获得一层印记，最多3层。
+                        <br><br>每层增加5%移动速度，出刀消耗一层。
+                        <br>叠满跑得飞快。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/迈尔斯 - 不要玩食物.png" alt="不要玩食物">
+                    <div class="card-content">
+                        <h3>不要玩食物 Monitor & Abuse</h3>
+                        <p>不追人的时候恐惧范围变小，视野变大；追人的时候恐惧范围变大。
+                        <br><br>心机流技能，偷偷靠近。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 女巫 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">女巫 The Hag</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/妖巫 - 厄咒：第三封印.png" alt="厄咒：第三封印">
+                    <div class="card-content">
+                        <h3>厄咒：第三封印 Hex: The Third Seal</h3>
+                        <p>击中逃生者后，他们看不到其他队友的气场。
+                        <br><br>最多影响4个人。
+                        <br>信息封锁流。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/妖巫 - 厄咒：毁灭.png" alt="厄咒：毁灭">
+                    <div class="card-content">
+                        <h3>厄咒：毁灭 Hex: Ruin</h3>
+                        <p>逃生者技能检验失败时，发电机倒退速度大幅提高。
+                        <br><br>倒退速度是正常的200/225/250%。
+                        <br>修机减速神技，图腾不拆就一直生效。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/妖巫 - 厄咒：吞噬希望.png" alt="厄咒：吞噬希望">
+                    <div class="card-content">
+                        <h3>厄咒：吞噬希望 Hex: Devour Hope</h3>
+                        <p>逃生者24米外救人，获得一层印记：
+                        <br>2层：一刀杀
+                        <br>3层：可以直接处决
+                        <br>翻盘神技，叠满直接处决。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 医生 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">医生 The Doctor</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/医生 - 压迫性气场.png" alt="压迫性气场">
+                    <div class="card-content">
+                        <h3>压迫性气场 Overwhelming Presence</h3>
+                        <p>你恐惧范围内的逃生者，物品消耗速度大幅提高。
+                        <br><br>消耗速度提高80/90/100%。
+                        <br>克制道具流，手电工具箱很快用完。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/医生 - 行监坐守.png" alt="行监坐守">
+                    <div class="card-content">
+                        <h3>行监坐守 Monitor & Abuse</h3>
+                        <p>不追人的时候恐惧范围变小，视野变大；追人的时候恐惧范围变大。
+                        <br><br>心机流技能，偷偷靠近。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/医生 - 电量超载.png" alt="电量超载">
+                    <div class="card-content">
+                        <h3>电量超载 Overcharge</h3>
+                        <p>踢发电机后，下一个修这台机的人会遇到一个超难的技能检验。
+                        <br><br>失败倒退更多进度。
+                        <br>踢机流技能。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 女猎手 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">女猎手 The Huntress</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/女猎手 - 厄咒：猎手摇篮曲.png" alt="厄咒：猎手摇篮曲">
+                    <div class="card-content">
+                        <h3>厄咒：猎手摇篮曲 Hex: Huntress Lullaby</h3>
+                        <p>每次有人被挂，获得一层印记。
+                        <br><br>技能检验的提示音会越来越小，5层后完全没有提示音。
+                        <br>炸机神技，听不到技能检验提示。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/女猎手 - 领地意识.png" alt="领地意识">
+                    <div class="card-content">
+                        <h3>领地意识 Territorial Imperative</h3>
+                        <p>当有逃生者进入地下室时，你可以看到他们的气场。
+                        <br><br>地下室守尸神技，有人下来就知道。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/女猎手 - 嗜血凶兽.png" alt="嗜血凶兽">
+                    <div class="card-content">
+                        <h3>嗜血凶兽 Beast of Prey</h3>
+                        <p>追逐中获得血怒时，你的恐惧范围消失，并且不会留下红光。
+                        <br><br>心机流，没有红光吓人。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 食人魔 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">食人魔 / 人皮脸 The Cannibal</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/食人魔 - 人肉烧烤.png" alt="人肉烧烤">
+                    <div class="card-content">
+                        <h3>人肉烧烤 Barbecue & Chilli</h3>
+                        <p>每次挂人后，可以看到40米外所有逃生者的气场，持续4秒。
+                        <br><br>信息位神技，挂完人就知道其他人在哪。
+                        <br>还加25%血点。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/食人魔 - 击倒出局.png" alt="击倒出局">
+                    <div class="card-content">
+                        <h3>击倒出局 Knock Out</h3>
+                        <p>被你击倒的人，其他队友看不到他的气场，而且爬行速度降低。
+                        <br><br>克制救人位，倒地了队友找不到。
+                        <br>守尸流技能。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/食人魔 - 富兰克林之死.png" alt="富兰克林之死">
+                    <div class="card-content">
+                        <h3>富兰克林之死 Franklin's Demise</h3>
+                        <p>击中逃生者时，他们手里的物品会掉在地上。
+                        <br><br>克制道具流，把东西打下来。
+                        <br>手电、工具箱都能打掉。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 梦魇 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">梦魇 / 弗莱迪 The Nightmare</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/梦魇 - 记忆犹新.png" alt="记忆犹新">
+                    <div class="card-content">
+                        <h3>记忆犹新 Remember Me</h3>
+                        <p>每次击中执念对象，获得一层印记，最多4层。
+                        <br><br>每层让开门时间增加4秒。
+                        <br>开门战神技，叠满开门要很久。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/梦魇 - 怒火中烧.png" alt="怒火中烧">
+                    <div class="card-content">
+                        <h3>怒火中烧 Fire Up</h3>
+                        <p>每坏一台发电机，你所有动作速度提高，最多5层。
+                        <br><br>每层提高3/3.5/4%。
+                        <br>越后期越强，踩板踢机都变快。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/梦魇 - 血腥狱长.png" alt="血腥狱长">
+                    <div class="card-content">
+                        <h3>血腥狱长 Blood Warden</h3>
+                        <p>终局游戏时，只要有人在大门附近，你可以激活技能把大门关上。
+                        <br><br>持续60秒
+                        <br>翻盘神技，关门打狗。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 猪妹 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">门徒 / 猪妹 The Pig</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/门徒 - 做出你的选择.png" alt="做出你的选择">
+                    <div class="card-content">
+                        <h3>做出你的选择 Make Your Choice</h3>
+                        <p>有人从钩子上救人时，救人的那个人会暴露位置，并且变成一刀杀状态。
+                        <br><br>范围：48米
+                        <br>守尸反制技能。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/门徒 - 了如指掌.png" alt="了如指掌">
+                    <div class="card-content">
+                        <h3>了如指掌 Surveillance</h3>
+                        <p>所有发电机的气场你都能看到，发电机倒退时会变黄提示。
+                        <br><br>信息位技能，知道哪台机在倒退。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/门徒 - 侩子手的把戏.png" alt="侩子手的把戏">
+                    <div class="card-content">
+                        <h3>侩子手的把戏 Hangman's Trick</h3>
+                        <p>有人进入钩子附近时，你会收到提示。
+                        <br><br>同时你破坏箱子的速度提高。
+                        <br>守尸预警技能。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 小丑 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">小丑 The Clown</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/小丑 - 心惊肉跳.png" alt="心惊肉跳">
+                    <div class="card-content">
+                        <h3>心惊肉跳 Pop Goes the Weasel</h3>
+                        <p>挂完人后，下次踢发电机直接倒退25%进度。
+                        <br><br>冷却时间：60/50/40秒
+                        <br>踢机流核心神技，挂完人踢机掉很多。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/小丑 - 小丑恐惧症.png" alt="小丑恐惧症">
+                    <div class="card-content">
+                        <h3>小丑恐惧症 Coulrophobia</h3>
+                        <p>你恐惧范围内的逃生者，治疗速度降低30/40/50%。
+                        <br><br>克制治疗流，在范围内摸得很慢。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/小丑 - 花言巧语.png" alt="花言巧语">
+                    <div class="card-content">
+                        <h3>花言巧语 Bamboozle</h3>
+                        <p>你翻窗户的速度提高，并且翻完后那个窗户会被封几秒。
+                        <br><br>封窗时间：8/10/12秒
+                        <br>克制无敌房，翻完就封窗。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 怨灵 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">怨灵 The Spirit</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/怨灵 - 怨气冲天.png" alt="怨气冲天">
+                    <div class="card-content">
+                        <h3>怨气冲天 Rancor</h3>
+                        <p>每次发电机修好，你和执念对象都能互相看到对方气场几秒。
+                        <br><br>最后一台机修好后，你获得一刀杀，并且可以处决执念对象。
+                        <br>翻盘处决神技。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/怨灵 - 厄咒：闹鬼之地.png" alt="厄咒：闹鬼之地">
+                    <div class="card-content">
+                        <h3>厄咒：闹鬼之地 Hex: Haunted Ground</h3>
+                        <p>有两个假图腾，逃生者拆了之后会暴露位置，并且你获得一刀杀。
+                        <br><br>一刀杀持续40/50/60秒
+                        <br>钓鱼执法，拆图腾就一刀杀。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/怨灵 - 暴怒怨灵.png" alt="暴怒怨灵">
+                    <div class="card-content">
+                        <h3>暴怒怨灵 Blood Echo</h3>
+                        <p>挂完人后，所有受伤的逃生者都会进入流血状态，并且不能奔跑。
+                        <br><br>持续时间：15/17/20秒
+                        <br>多伤流技能，挂完人其他人都跑不动。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 军团 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">军团 The Legion</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/军团 - 疯狂勇气.png" alt="疯狂勇气">
+                    <div class="card-content">
+                        <h3>疯狂勇气 Mad Grit</h3>
+                        <p>抱着人的时候击中逃生者，挣扎进度不会增加。
+                        <br><br>同时擦刀速度提高。
+                        <br>抱人也能打人，不怕挣扎。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/军团 - 铁处女.png" alt="铁处女">
+                    <div class="card-content">
+                        <h3>铁处女 Iron Maiden</h3>
+                        <p>你开柜子的速度大幅提高，从柜子里出来的人会暴露位置并且受伤。
+                        <br><br>克制柜皇，出柜就受伤暴露。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/军团 - 配合失谐.png" alt="配合失谐">
+                    <div class="card-content">
+                        <h3>配合失谐 Discordance</h3>
+                        <p>当有2个或以上逃生者在修同一台发电机时，那台发电机会高亮提示。
+                        <br><br>范围：无限
+                        <br>信息位神技，多人修机自动报警。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 瘟疫 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">瘟疫 The Plague</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/瘟疫 - 腐烂干预.png" alt="腐烂干预">
+                    <div class="card-content">
+                        <h3>腐烂干预 Corrupt Intervention</h3>
+                        <p>游戏开始时，离你最远的3台发电机会被封锁，不能修。
+                        <br><br>持续时间：80/100/120秒
+                        <br>开局压迫，强制逃生者来你这边修。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/瘟疫 - 黑暗奉献.png" alt="黑暗奉献">
+                    <div class="card-content">
+                        <h3>黑暗奉献 Dark Devotion</h3>
+                        <p>击中执念对象后，恐惧范围会转移到他身上，你自己没有恐惧范围。
+                        <br><br>持续时间：20/25/30秒
+                        <br>心机流，恐惧范围转移给别人。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/瘟疫 - 恐惧传染.png" alt="恐惧传染">
+                    <div class="card-content">
+                        <h3>恐惧传染 Infectious Fright</h3>
+                        <p>击倒一个逃生者后，你恐惧范围内其他所有逃生者都会尖叫暴露位置。
+                        <br><br>范围：你的恐惧范围
+                        <br>击倒一个，周围全暴露。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 鬼面 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">鬼面 The Ghost Face</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/鬼面 - 惊险战栗.png" alt="惊险战栗">
+                    <div class="card-content">
+                        <h3>惊险战栗 Thrilling Tremors</h3>
+                        <p>挂完人后，所有没人在修的发电机会被恶灵挡住，看不到。
+                        <br><br>持续时间：10/12/16秒
+                        <br>信息位技能，知道哪台机有人在修。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/鬼面 - 洗耳恭听.png" alt="洗耳恭听">
+                    <div class="card-content">
+                        <h3>洗耳恭听 I'm All Ears</h3>
+                        <p>逃生者在你范围内快速翻窗、快速翻板时，你可以看到他们的气场。
+                        <br><br>范围：48米，持续3秒
+                        <br>信息位技能，翻窗翻板就暴露。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/鬼面 - 鬼祟追杀.png" alt="鬼祟追杀">
+                    <div class="card-content">
+                        <h3>鬼祟追杀 Furtive Chase</h3>
+                        <p>每次你失去追逐，获得一层印记，最多4层。
+                        <br><br>每层让你的红光变远，看起来你离得更远。
+                        <br>心机流，红光骗人。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 鬼武士 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">鬼武士 The Oni</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/鬼武士 - 鲜血回响.png" alt="鲜血回响">
+                    <div class="card-content">
+                        <h3>鲜血回响 Blood Echo</h3>
+                        <p>挂完人后，所有受伤的逃生者都会进入流血状态，并且不能奔跑。
+                        <br><br>多伤流技能，挂完人其他人都跑不动。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/鬼武士 - 报应.png" alt="报应">
+                    <div class="card-content">
+                        <h3>报应 Nemesis</h3>
+                        <p>有人用板子砸晕你后，那个人会变成执念对象，并且是一刀杀状态。
+                        <br><br>持续时间：10/20/30秒
+                        <br>砸板就一刀杀，反制砸板。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/鬼武士 - 残心.png" alt="残心">
+                    <div class="card-content">
+                        <h3>残心 Zanshin Tactics</h3>
+                        <p>你可以看到12/14/16米范围内板子和窗户的气场。
+                        <br><br>提前知道地形，规划路线。
+                        <br>信息位技能。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 死亡枪手 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">死亡枪手 The Deathslinger</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/死亡枪手 - 失效开关.png" alt="失效开关">
+                    <div class="card-content">
+                        <h3>失效开关 Dead Man's Switch</h3>
+                        <p>挂完人后，所有正在修的发电机都会被锁住，不能修。
+                        <br><br>持续时间：30/35/40秒
+                        <br>挂完人全图锁机，压迫感拉满。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/死亡枪手 - 设备发烧友.png" alt="设备发烧友">
+                    <div class="card-content">
+                        <h3>设备发烧友 Gearhead</h3>
+                        <p>逃生者连续两次技能检验成功，你就可以看到那台发电机的气场。
+                        <br><br>持续时间：30秒
+                        <br>信息位技能，修得稳的机你能看到。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/死亡枪手 - 厄咒：惩戒.png" alt="厄咒：惩戒">
+                    <div class="card-content">
+                        <h3>厄咒：惩戒 Hex: Retribution</h3>
+                        <p>逃生者拆了你的厄咒图腾后，他们会暴露位置，并且你获得一刀杀。
+                        <br><br>一刀杀持续10/15/20秒
+                        <br>拆图腾就惩罚，一刀杀。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 处刑者 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">处刑者 / 三角头 The Executioner</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/处刑者 - 死亡羁绊.png" alt="死亡羁绊">
+                    <div class="card-content">
+                        <h3>死亡羁绊 Deathbound</h3>
+                        <p>当两个逃生者离得很近时，他们会受到深伤状态影响。
+                        <br><br>范围：32米
+                        <br>克制抱团，靠太近就深伤。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/处刑者 - 强制忏悔.png" alt="强制忏悔">
+                    <div class="card-content">
+                        <h3>强制忏悔 Forced Penance</h3>
+                        <p>有人替队友挡刀时，那个人会受到重伤状态。
+                        <br><br>持续时间：60/70/80秒
+                        <br>克制挡刀流，挡刀就重伤。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/处刑者 - 折磨路径.png" alt="折磨路径">
+                    <div class="card-content">
+                        <h3>折磨路径 Trail of Torment</h3>
+                        <p>踢发电机后，你获得隐身（没有恐惧范围和红光），并且那台发电机高亮。
+                        <br><br>持续时间：12/14/16秒
+                        <br>踢机后隐身，偷偷靠近。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 枯萎者 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">枯萎者 The Blight</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/枯萎者 - 巨龙之握.png" alt="巨龙之握">
+                    <div class="card-content">
+                        <h3>巨龙之握 Dragon's Grip</h3>
+                        <p>踢发电机后，下一个碰这台机的人会触发超难技能检验，失败就尖叫暴露。
+                        <br><br>持续时间：30/35/40秒
+                        <br>踢机钓鱼，一碰就炸。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/枯萎者 - 厄咒：鲜血恩惠.png" alt="厄咒：鲜血恩惠">
+                    <div class="card-content">
+                        <h3>厄咒：鲜血恩惠 Hex: Blood Favor</h3>
+                        <p>击中逃生者后，32米内所有板子会被恶灵挡住，不能放下来。
+                        <br><br>持续时间：10/12/15秒
+                        <br>击中就封板，溜不了。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/枯萎者 - 厄咒：不死.png" alt="厄咒：不死">
+                    <div class="card-content">
+                        <h3>厄咒：不死 Hex: Undying</h3>
+                        <p>你的其他厄咒图腾被拆了，会转移到这个图腾上，损失一半层数。
+                        <br><br>同时你可以看到拆图腾的人的气场。
+                        <br>保护其他厄咒，不容易被拆光。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 双子 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">双子 The Twins</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/连体婴 - 囤积者.png" alt="囤积者">
+                    <div class="card-content">
+                        <h3>囤积者 Hoarder</h3>
+                        <p>你可以看到箱子的气场，有人开箱子时你会收到提示。
+                        <br><br>同时场上会多刷2个箱子。
+                        <br>信息位技能，有人摸宝你知道。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/连体婴 - 切肤之痛.png" alt="切肤之痛">
+                    <div class="card-content">
+                        <h3>切肤之痛 Oppression</h3>
+                        <p>踢发电机时，其他3台随机发电机也会触发技能检验。
+                        <br><br>冷却时间：80/70/60秒
+                        <br>踢一台机，炸三台机。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/连体婴 - 恩赐解脱.png" alt="恩赐解脱">
+                    <div class="card-content">
+                        <h3>恩赐解脱 Retribution</h3>
+                        <p>逃生者拆了你的厄咒图腾后，他们会暴露位置，并且你获得一刀杀。
+                        <br><br>拆图腾就惩罚，一刀杀。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 骗术师 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">骗术师 The Trickster</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/骗术师 - 追星狂.png" alt="追星狂">
+                    <div class="card-content">
+                        <h3>追星狂 Starstruck</h3>
+                        <p>抱着人时，你恐惧范围内的逃生者会暴露位置，并且是一刀杀状态。
+                        <br><br>持续时间：20/25/30秒
+                        <br>抱人时周围全是一刀杀。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/骗术师 - 厄咒：群体控制.png" alt="厄咒：群体控制">
+                    <div class="card-content">
+                        <h3>厄咒：群体控制 Hex: Crowd Control</h3>
+                        <p>逃生者翻窗户后，那个窗户会被封住，不能再翻。
+                        <br><br>封窗时间：14/17/20秒
+                        <br>克制无敌房，翻完就封。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/骗术师 - 无路可逃.png" alt="无路可逃">
+                    <div class="card-content">
+                        <h3>无路可逃 No Way Out</h3>
+                        <p>每挂一个人，开门时间增加12秒，最多4层（48秒）。
+                        <br><br>同时第一个碰大门的人会触发提示。
+                        <br>开门战神技，开门要超久。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 追击者 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">追击者 / 复仇女神 The Nemesis</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/追击者 - 致命追踪者.png" alt="致命追踪者">
+                    <div class="card-content">
+                        <h3>致命追踪者 Lethal Pursuer</h3>
+                        <p>游戏开始时，你可以看到所有逃生者的气场，持续5/7/9秒。
+                        <br><br>开局就知道所有人位置。
+                        <br>开局找人权。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/追击者 - 爆发.png" alt="爆发">
+                    <div class="card-content">
+                        <h3>爆发 Eruption</h3>
+                        <p>击倒一个人后，所有你踢过的发电机会爆炸，倒退进度，并且修机的人会尖叫。
+                        <br><br>倒退10%进度
+                        <br>击倒就炸机，修机的人全炸。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/追击者 - 歇斯底里.png" alt="歇斯底里">
+                    <div class="card-content">
+                        <h3>歇斯底里 Hysteria</h3>
+                        <p>击中受伤的逃生者后，所有受伤的人都会获得 Oblivious（无感）状态。
+                        <br><br>持续时间：20/25/30秒
+                        <br>多伤流，受伤的人都听不到心跳。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 地狱修士 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">地狱修士 / 钉子头 The Cenobite</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/地狱修士 - 死锁.png" alt="死锁">
+                    <div class="card-content">
+                        <h3>死锁 Deadlock</h3>
+                        <p>每修好一台发电机，下一台修得最多的发电机会被锁住30秒。
+                        <br><br>自动锁机，不让人连续修开。
+                        <br>拖节奏神技。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/地狱修士 - 厄咒：玩物.png" alt="厄咒：玩物">
+                    <div class="card-content">
+                        <h3>厄咒：玩物 Hex: Plaything</h3>
+                        <p>每次挂人，那个人会被诅咒，看不到你的气场，还会有假心跳。
+                        <br><br>持续到图腾被拆掉
+                        <br>信息封锁，被挂的人看不到你。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/地狱修士 - 天灾钩子：痛苦礼物.png" alt="天灾钩子：痛苦礼物">
+                    <div class="card-content">
+                        <h3>天灾钩子：痛苦礼物 Scourge Hook: Pain Resonance</h3>
+                        <p>场上有4个天灾钩子，把人挂在天灾钩子上，那台修得最多的发电机倒退25%。
+                        <br><br>挂人就炸机，修得最多的那台掉很多。
+                        <br>踢机流核心技能。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 艺术家 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">艺术家 The Artist</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/艺术家 - 冷酷之拥.png" alt="冷酷之拥">
+                    <div class="card-content">
+                        <h3>冷酷之拥 Grim Embrace</h3>
+                        <p>第一次挂每个人时，所有发电机会被锁住，并且你看到所有人气场。
+                        <br><br>锁机持续20/25/30秒
+                        <br>挂第一个人全图锁机。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/艺术家 - 天灾钩子：痛苦共鸣.png" alt="天灾钩子：痛苦共鸣">
+                    <div class="card-content">
+                        <h3>天灾钩子：痛苦共鸣 Scourge Hook: Pain Resonance</h3>
+                        <p>把人挂在天灾钩子上，那台修得最多的发电机倒退25%进度。
+                        <br><br>挂人就炸机，修得最多的那台掉很多。
+                        <br>踢机流核心技能。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/艺术家 - 厄咒：余痕.png" alt="厄咒：余痕">
+                    <div class="card-content">
+                        <h3>厄咒：余痕 Hex: Pentimento</h3>
+                        <p>被拆掉的厄咒图腾可以被你重新插回去，重新插的图腾有强力效果。
+                        <br><br>插的越多效果越强
+                        <br>5个全插：所有发电机修不了
+                        <br>翻盘神技。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 贞子 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">贞子 The Onryō</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/贞子 - 盐水召唤.png" alt="盐水召唤">
+                    <div class="card-content">
+                        <h3>盐水召唤 Call of Brine</h3>
+                        <p>踢发电机后，那台发电机倒退速度提高，并且有人修你会收到提示。
+                        <br><br>倒退速度提高130/160/190%
+                        <br>持续60秒
+                        <br>踢机流技能，倒退更快还能监控。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/贞子 - 无情风暴.png" alt="无情风暴">
+                    <div class="card-content">
+                        <h3>无情风暴 Merciless Storm</h3>
+                        <p>发电机修到90%时，会触发连续的超难技能检验，失败就倒退很多。
+                        <br><br>连续多个技能检验
+                        <br>快修完的时候炸机，心态爆炸。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/贞子 - 天灾钩子：狂怒之潮.png" alt="天灾钩子：狂怒之潮">
+                    <div class="card-content">
+                        <h3>天灾钩子：狂怒之潮 Scourge Hook: Floods of Rage</h3>
+                        <p>把人从钩子上救下来时，你可以看到所有逃生者的气场，持续几秒。
+                        <br><br>救人就全图暴露位置。
+                        <br>信息位技能。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 影魔 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">影魔 / 深渊之主 The Dredge</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/影魔 - 黑暗启迪.png" alt="黑暗启迪">
+                    <div class="card-content">
+                        <h3>黑暗启迪 Darkness Revealed</h3>
+                        <p>你钻进柜子传送时，可以看到32米范围内所有逃生者的气场。
+                        <br><br>传送就找人，信息位神技。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/影魔 - 烟消云散.png" alt="烟消云散">
+                    <div class="card-content">
+                        <h3>烟消云散 Dissolution</h3>
+                        <p>击倒一个人后，32米内的板子会自动碎掉，持续一段时间。
+                        <br><br>击倒就碎板，溜不了。
+                        <br>克制板区。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/影魔 - 感染之触.png" alt="感染之触">
+                    <div class="card-content">
+                        <h3>感染之触 Deadlock</h3>
+                        <p>每修好一台发电机，下一台修得最多的发电机会被锁住。
+                        <br><br>自动锁机，拖节奏神技。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 操纵者 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">操纵者 / 威斯克 The Mastermind</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/操纵者 - 超人类体能.png" alt="超人类体能">
+                    <div class="card-content">
+                        <h3>超人类体能 Superior Anatomy</h3>
+                        <p>你翻窗、翻板的速度提高5/10/15%。
+                        <br><br>追人更快，地形优势更大。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/操纵者 - 感知觉醒.png" alt="感知觉醒">
+                    <div class="card-content">
+                        <h3>感知觉醒 Awakened Awareness</h3>
+                        <p>追逐中，你可以看到你前面24米内发电机和钩子的气场。
+                        <br><br>追人的时候也知道附近的机和钩子。
+                        <br>信息位技能。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/操纵者 - 终局战术.png" alt="终局战术">
+                    <div class="card-content">
+                        <h3>终局战术 Pain Resonance</h3>
+                        <p>把人挂在天灾钩子上，那台修得最多的发电机倒退25%进度。
+                        <br><br>挂人就炸机，踢机流核心。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 恶骑士 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">恶骑士 The Knight</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/恶骑士 - 骄傲自大.png" alt="骄傲自大">
+                    <div class="card-content">
+                        <h3>骄傲自大 Hubris</h3>
+                        <p>有人用板子砸你时，那个人会受伤，并且暴露位置。
+                        <br><br>砸板就受伤，反制砸板流。
+                        <br>不怕砸板，砸了就挨一刀。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/恶骑士 - 无处可藏.png" alt="无处可藏">
+                    <div class="card-content">
+                        <h3>无处可藏 No Way Out</h3>
+                        <p>每挂一个人，开门时间增加12秒，最多4层。
+                        <br><br>开门战神技，开门要超久。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/恶骑士 - 厄咒：直面黑暗.png" alt="厄咒：直面黑暗">
+                    <div class="card-content">
+                        <h3>厄咒：直面黑暗 Hex: Face the Darkness</h3>
+                        <p>有人受伤时，所有逃生者都会听到假心跳，并且会尖叫暴露位置。
+                        <br><br>只要有一个人受伤，全图都有心跳。
+                        <br>多伤流核心，全图压迫。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 白骨商人 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">白骨商人 / 骷髅商人 The Skull Merchant</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/白骨商人 - 好戏开场.png" alt="好戏开场">
+                    <div class="card-content">
+                        <h3>好戏开场 Lethal Pursuer</h3>
+                        <p>游戏开始时，你可以看到所有逃生者的气场，持续几秒。
+                        <br><br>开局就知道所有人位置。
+                        <br>开局找人权。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/白骨商人 - 哐哐作响.png" alt="哐哐作响">
+                    <div class="card-content">
+                        <h3>哐哐作响 Gearhead</h3>
+                        <p>逃生者连续两次技能检验成功，你就可以看到那台发电机的气场。
+                        <br><br>信息位技能，修得稳的机你能看到。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/白骨商人 - 杠杆效应.png" alt="杠杆效应">
+                    <div class="card-content">
+                        <h3>杠杆效应 Overcharge</h3>
+                        <p>踢发电机后，下一个修这台机的人会遇到一个超难的技能检验。
+                        <br><br>失败倒退更多进度。
+                        <br>踢机流技能。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 奇点 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">奇点 The Singularity</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/奇点 - 机器学习.png" alt="机器学习">
+                    <div class="card-content">
+                        <h3>机器学习 Machine Learning</h3>
+                        <p>踢完4台发电机后，你获得隐身（无红光无心跳），并且破坏速度大幅提高。
+                        <br><br>持续30秒
+                        <br>踢4台机后隐身，偷偷靠近。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/奇点 - 基因锁.png" alt="基因锁">
+                    <div class="card-content">
+                        <h3>基因锁 Genetic Advantage</h3>
+                        <p>发电机修到70%时，你会收到提示，并且移动速度提高。
+                        <br><br>修得快的机自动报警。
+                        <br>信息位技能。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/奇点 - 踯躅不前.png" alt="踯躅不前">
+                    <div class="card-content">
+                        <h3>踯躅不前 Information Overload</h3>
+                        <p>踢发电机后，正在修那台机的人会爆炸，并且看不到气场。
+                        <br><br>踢机就炸，还致盲。
+                        <br>踢机流技能。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 异形 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">异形 The Xenomorph</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/异形 - 终极武器.png" alt="终极武器">
+                    <div class="card-content">
+                        <h3>终极武器 Ultimate Weapon</h3>
+                        <p>打开柜子后，你恐惧范围内所有逃生者会尖叫暴露位置，并且你视野变大。
+                        <br><br>持续30秒
+                        <br>开柜就找人，信息位神技。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/异形 - 疾速残暴.png" alt="疾速残暴">
+                    <div class="card-content">
+                        <h3>疾速残暴 Rapid Brutality</h3>
+                        <p>击中逃生者后，你获得移动速度加成，持续几秒。
+                        <br><br>挨刀后你跑得更快，继续追。
+                        <br>追击流技能。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/异形 - 异形本能.png" alt="异形本能">
+                    <div class="card-content">
+                        <h3>异形本能 Alien Instinct</h3>
+                        <p>你可以看到24米内受伤逃生者留下的血迹，并且爬行的人你也能看到气场。
+                        <br><br>追踪受伤的人更容易。
+                        <br>信息位技能。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 通用屠夫技能 -->
+            <h4 style="color: #9c27b0; margin: 40px 0 15px 0;">通用屠夫技能</h4>
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 不屈不挠.png" alt="不屈不挠">
+                    <div class="card-content">
+                        <h3>不屈不挠 Unrelenting</h3>
+                        <p>出刀落空后的恢复速度提高。
+                        <br><br>空刀后更快恢复，继续追。
+                        <br>追击流技能。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 电能振荡.png" alt="电能振荡">
+                    <div class="card-content">
+                        <h3>电能振荡 Overcharge</h3>
+                        <p>踢发电机后，下一个修这台机的人会遇到超难技能检验。
+                        <br><br>失败倒退更多进度。
+                        <br>踢机流技能。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 厄咒：猎杀戾气.png" alt="厄咒：猎杀戾气">
+                    <div class="card-content">
+                        <h3>厄咒：猎杀戾气 Hex: No One Escapes Death</h3>
+                        <p>所有发电机修好后，你获得一刀杀，并且移动速度提高。
+                        <br><br>俗称"一刀杀"
+                        <br>开门战翻盘神技。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 恶灵低语.png" alt="恶灵低语">
+                    <div class="card-content">
+                        <h3>恶灵低语 Whispers</h3>
+                        <p>当有逃生者在你48米范围内时，你会听到低语声。
+                        <br><br>找人神技，知道附近有人。
+                        <br>信息位核心技能。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 鬼鸦谍影.png" alt="鬼鸦谍影">
+                    <div class="card-content">
+                        <h3>鬼鸦谍影 Spies from the Shadows</h3>
+                        <p>逃生者惊飞乌鸦时，你会收到提示，并且能看到位置。
+                        <br><br>乌鸦报警，有人经过就知道。
+                        <br>信息位技能。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 静止隐身.png" alt="静止隐身">
+                    <div class="card-content">
+                        <h3>静止隐身 Insidious</h3>
+                        <p>站着不动几秒后，你完全没有心跳和红光。
+                        <br><br>守尸神技，站着不动完全隐身。
+                        <br>心机流核心。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 恐惧使者.png" alt="恐惧使者">
+                    <div class="card-content">
+                        <h3>恐惧使者 Distressing</h3>
+                        <p>你的恐惧范围扩大，并且恐惧范围内的人技能检验更难。
+                        <br><br>恐惧范围扩大，炸机概率提高。
+                        <br>压迫流技能。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 苦涩低语.png" alt="苦涩低语">
+                    <div class="card-content">
+                        <h3>苦涩低语 Bitter Murmur</h3>
+                        <p>每修好一台发电机，你可以看到附近逃生者的气场几秒。
+                        <br><br>最后一台机修好后，你能看到所有人的气场。
+                        <br>信息位技能。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 辣手屠夫.png" alt="辣手屠夫">
+                    <div class="card-content">
+                        <h3>辣手屠夫 Sloppy Butcher</h3>
+                        <p>击中逃生者后，他们流血速度更快，并且治疗速度降低。
+                        <br><br>流血速度提高，治疗变慢。
+                        <br>多伤流核心技能。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 牢牢紧握.png" alt="牢牢紧握">
+                    <div class="card-content">
+                        <h3>牢牢紧握 Iron Grasp</h3>
+                        <p>抱着逃生者时，他们挣扎的效果降低，你走得更稳。
+                        <br><br>挣扎效果降低。
+                        <br>抱人不容易被晃下来。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 猎鹿者.png" alt="猎鹿者">
+                    <div class="card-content">
+                        <h3>猎鹿者 Deerstalker</h3>
+                        <p>你可以看到12米范围内倒地逃生者的气场。
+                        <br><br>找倒地的人更容易。
+                        <br>守尸流技能。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/通用 - 幽闭恐惧症.png" alt="幽闭恐惧症">
+                    <div class="card-content">
+                        <h3>幽闭恐惧症 Claustrophobia</h3>
+                        <p>所有发电机修好后，所有逃生者的视野会变小，持续一段时间。
+                        <br><br>开门战致盲，视野变小。
+                        <br>开门战技能。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        本网站为爱好者学习制作，黎明杀机版权归 Behaviour Interactive 所有
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
+
+
+
+

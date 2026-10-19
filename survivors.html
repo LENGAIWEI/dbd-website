@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>逃生者图鉴 | 黎明杀机资料库</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-box">
+            <a href="index.html" class="logo">黎明杀机资料库</a>
+            <div class="nav-right">
+                <nav class="nav-menu">
+                    <a href="index.html">首页</a>
+                    <a href="survivors.html" class="active">逃生者</a>
+                    <a href="killers.html">屠夫</a>
+                    <a href="perks.html">技能图鉴</a>
+                    <a href="maps.html">地图大全</a>
+                </nav>
+                <input type="text" id="headerSearch" class="header-search-input" placeholder="站内搜索…" autocomplete="off">
+            </div>
+        </div>
+        <div class="search-result-bar" id="headerSearchResult"></div>
+    </header>
+
+    <main class="container">
+        <h2 class="page-title">逃生者图鉴</h2>
+        <p>全部幸存者角色信息，含背景故事、专属技能与实战定位。</p>
+
+        <!-- 筛选栏 -->
+        <div class="filter-bar" id="filterBar">
+            <span class="filter-label">阵营：</span>
+            <button class="filter-chip active" data-filter="faction" data-value="全部">全部</button>
+            <button class="filter-chip" data-filter="faction" data-value="原创">原创</button>
+            <button class="filter-chip" data-filter="faction" data-value="授权">授权</button>
+            <span class="filter-sep"></span>
+            <span class="filter-label">定位：</span>
+            <button class="filter-chip active" data-filter="role" data-value="全部">全部</button>
+            <button class="filter-chip" data-filter="role" data-value="团队">团队</button>
+            <button class="filter-chip" data-filter="role" data-value="治疗">治疗</button>
+            <button class="filter-chip" data-filter="role" data-value="机动">机动</button>
+            <button class="filter-chip" data-filter="role" data-value="潜行">潜行</button>
+            <button class="filter-chip" data-filter="role" data-value="牵制">牵制</button>
+            <button class="filter-chip" data-filter="role" data-value="救人">救人</button>
+            <button class="filter-chip" data-filter="role" data-value="信息">信息</button>
+        </div>
+
+        <div class="card-grid">
+            <div class="card char-card" data-faction="原创" data-role="团队">
+                <img class="card-img" src="./images/portraits/德怀特·费菲尔德.png" alt="德怀特·费菲尔德">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">团队</span>
+                    </div>
+                    <h3>德怀特·费菲尔德 <small>Dwight Fairfield</small></h3>
+                    <p class="char-desc">曾经在职场中被无视的小职员，被同事戏称为"隐形人"。一次公司团建让他误入迷雾，却在这里找到了属于自己的位置与伙伴。</p>
+                    <p class="char-perks"><span>专属技能</span>羁绊 · 领袖群雄 · 证明自己</p>
+                    <p class="char-tip">💡 团队协作核心，找队友快、抱团修机提速。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="机动">
+                <img class="card-img" src="./images/portraits/梅格·托马斯.png" alt="梅格·托马斯">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">机动</span>
+                    </div>
+                    <h3>梅格·托马斯 <small>Meg Thomas</small></h3>
+                    <p class="char-desc">天赋出众的田径运动员，在母亲过度的期待与掌控下长大，奔跑是她逃离束缚、证明自己的方式。</p>
+                    <p class="char-perks"><span>专属技能</span>冲刺爆发 · 急速静谧 · 肾上腺素</p>
+                    <p class="char-tip">💡 拉扯天花板，两段位移让她极难被追上。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="治疗">
+                <img class="card-img" src="./images/portraits/克劳黛特·莫莱.png" alt="克劳黛特·莫莱">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">治疗</span>
+                    </div>
+                    <h3>克劳黛特·莫莱 <small>Claudette Morel</small></h3>
+                    <p class="char-desc">内向安静的植物学研究生，把对植物的热爱转化为治愈他人的力量，是团队中最可靠的生命线。</p>
+                    <p class="char-perks"><span>专属技能</span>心灵共鸣 · 精研百草 · 自我疗愈</p>
+                    <p class="char-tip">💡 治疗系代表，奶量十足，团队续航核心。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="潜行">
+                <img class="card-img" src="./images/portraits/杰克·帕克.png" alt="杰克·帕克">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">潜行</span>
+                    </div>
+                    <h3>杰克·帕克 <small>Jake Park</small></h3>
+                    <p class="char-desc">出身豪门却心向荒野，与家族决裂后隐居山林，练就一身隐蔽与生存的本领。</p>
+                    <p class="char-perks"><span>专属技能</span>钢铁意志 · 安抚生灵 · 破坏手</p>
+                    <p class="char-tip">💡 潜行独狼，受伤不吭声、惊鸟不叫，极难被追踪。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="机动">
+                <img class="card-img" src="./images/portraits/妮娅·卡尔森.png" alt="妮娅·卡尔森">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">机动</span>
+                    </div>
+                    <h3>妮娅·卡尔森 <small>Nea Karlsson</small></h3>
+                    <p class="char-desc">街头涂鸦艺术家兼跑酷者，城市的屋顶与小巷就是她的游乐场，来去无踪、身手敏捷。</p>
+                    <p class="char-perks"><span>专属技能</span>平稳着陆 · 暴走族 · 都市生存</p>
+                    <p class="char-tip">💡 跑酷女王，高楼跳下依旧从容，转点极强。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="授权" data-role="救人">
+                <img class="card-img" src="./images/portraits/劳丽·斯特罗德.png" alt="劳丽·斯特罗德">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">授权</span>
+                        <span class="tag tag-role">救人</span>
+                    </div>
+                    <h3>劳丽·斯特罗德 <small>Laurie Strode</small></h3>
+                    <p class="char-desc">来自《万圣节》系列的"最终女孩"，一次次从迈克尔的追杀中幸存，早已深谙绝境求生之道。</p>
+                    <p class="char-perks"><span>专属技能</span>果断反击 · 魂牵梦绕 · 最后的生还者</p>
+                    <p class="char-tip">💡 被扛起也能果断反击，自保能力一流。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="信息">
+                <img class="card-img" src="./images/portraits/埃斯·维斯孔蒂.png" alt="埃斯·维斯孔蒂">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">信息</span>
+                    </div>
+                    <h3>埃斯·维斯孔蒂 <small>Ace Visconti</small></h3>
+                    <p class="char-desc">风度翩翩的老练赌徒，一生靠运气与算计行走江湖，即便进了迷雾也笑得从容。</p>
+                    <p class="char-perks"><span>专属技能</span>锦囊妙计 · 稳操胜券 · 好运会传染</p>
+                    <p class="char-tip">💡 气场与摸箱双修，运气型辅助好手。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="授权" data-role="救人">
+                <img class="card-img" src="./images/portraits/威廉·比尔·奥弗贝克.png" alt="威廉·比尔·奥弗贝克">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">授权</span>
+                        <span class="tag tag-role">救人</span>
+                    </div>
+                    <h3>威廉·"比尔"·奥弗贝克 <small>Bill Overbeck</small></h3>
+                    <p class="char-desc">来自《求生之路》的越战老兵，沉默寡言却愿意为同伴赴汤蹈火，是团队最坚实的后盾。</p>
+                    <p class="char-perks"><span>专属技能</span>坚不可摧 · 时不我待 · 末日残兵</p>
+                    <p class="char-tip">💡 倒地也能自救、扛住压力，绝境翻盘代表。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="机动">
+                <img class="card-img" src="./images/portraits/凤敏.png" alt="凤敏">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">机动</span>
+                    </div>
+                    <h3>凤敏 <small>Feng Min</small></h3>
+                    <p class="char-desc">曾为电竞选手的年轻女孩，为追逐梦想熬夜苦练，反应与操作都是顶尖水平。</p>
+                    <p class="char-perks"><span>专属技能</span>技术员 · 警戒 · 轻盈敏捷</p>
+                    <p class="char-tip">💡 翻窗加速+修机静音，攻守兼备。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="牵制">
+                <img class="card-img" src="./images/portraits/大卫·金.png" alt="大卫·金">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">牵制</span>
+                    </div>
+                    <h3>大卫·金 <small>David King</small></h3>
+                    <p class="char-desc">脾气火爆的格斗好手，靠一双拳头在街头打拼，也把这份硬气带进了迷雾。</p>
+                    <p class="char-perks"><span>专属技能</span>不痛不痒 · 生死与共 · 钢筋铁骨</p>
+                    <p class="char-tip">💡 受伤仍硬朗，扛刀保护队友的硬汉。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="授权" data-role="治疗">
+                <img class="card-img" src="./images/portraits/昆汀·史密斯.png" alt="昆汀·史密斯">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">授权</span>
+                        <span class="tag tag-role">治疗</span>
+                    </div>
+                    <h3>昆汀·史密斯 <small>Quentin Smith</small></h3>
+                    <p class="char-desc">来自《猛鬼街》的失眠少年，与弗莱迪的梦魇斗争多年，早已学会在恐惧中保持清醒。</p>
+                    <p class="char-perks"><span>专属技能</span>醒醒 · 药到病除 · 守夜人</p>
+                    <p class="char-tip">💡 减少队友负面状态，开门战稳住局势。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="授权" data-role="信息">
+                <img class="card-img" src="./images/portraits/大卫·泰普探长.png" alt="大卫·泰普探长">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">授权</span>
+                        <span class="tag tag-role">信息</span>
+                    </div>
+                    <h3>大卫·泰普探长 <small>Detective Tapp</small></h3>
+                    <p class="char-desc">来自《电锯惊魂》的执着警探，为追查拼图杀手而陷入绝境，观察力与直觉极强。</p>
+                    <p class="char-perks"><span>专属技能</span>警探直觉 · 破案心切 · 永不言弃</p>
+                    <p class="char-tip">💡 信息拉满，快速掌握局势与发电机点位。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="机动">
+                <img class="card-img" src="./images/portraits/凯特·登森.png" alt="凯特·登森">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">机动</span>
+                    </div>
+                    <h3>凯特·登森 <small>Kate Denson</small></h3>
+                    <p class="char-desc">向往自由的民谣歌手，背起吉他流浪四方，歌声里满是挣脱束缚的渴望。</p>
+                    <p class="char-perks"><span>专属技能</span>与我共舞 · 机遇之窗 · 脱缰野马</p>
+                    <p class="char-tip">💡 翻窗看板、甩掉屠夫，溜鬼高手。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="救人">
+                <img class="card-img" src="./images/portraits/亚当·弗朗西斯.png" alt="亚当·弗朗西斯">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">救人</span>
+                    </div>
+                    <h3>亚当·弗朗西斯 <small>Adam Francis</small></h3>
+                    <p class="char-desc">出身贫寒却靠努力成为教师的青年，用知识与温柔守护身边的每一个人。</p>
+                    <p class="char-perks"><span>专属技能</span>善有善报 · 声东击西 · 自学成才</p>
+                    <p class="char-tip">💡 钩上自救+救人反制，救人位利器。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="信息">
+                <img class="card-img" src="./images/portraits/杰夫·约翰森.png" alt="杰夫·约翰森">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">信息</span>
+                    </div>
+                    <h3>杰夫·约翰森 <small>Jeff Johansen</small></h3>
+                    <p class="char-desc">沉默寡言的金属乐手兼纹身师，外表粗犷内心细腻，习惯在暗处观察一切。</p>
+                    <p class="char-perks"><span>专属技能</span>分崩离析 · 劫后余生 · 气场失真</p>
+                    <p class="char-tip">💡 气场信息丰富，遮蔽自身气场干扰屠夫。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="牵制">
+                <img class="card-img" src="./images/portraits/简·罗梅罗.png" alt="简·罗梅罗">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">牵制</span>
+                    </div>
+                    <h3>简·罗梅罗 <small>Jane Romero</small></h3>
+                    <p class="char-desc">敢说敢做的主持人，靠一档脱口秀走红，气场强大、从不向恶势力低头。</p>
+                    <p class="char-perks"><span>专属技能</span>勇往直前 · 团结一致 · 蓄势待发</p>
+                    <p class="char-tip">💡 柜中蓄力撞晕屠夫，正面硬刚的狠角色。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="授权" data-role="牵制">
+                <img class="card-img" src="./images/portraits/阿什利·威廉姆斯.png" alt="阿什利·阿什·威廉姆斯">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">授权</span>
+                        <span class="tag tag-role">牵制</span>
+                    </div>
+                    <h3>阿什利·"阿什"·威廉姆斯 <small>Ash Williams</small></h3>
+                    <p class="char-desc">来自《鬼玩人》的传奇英雄，嘴炮与电锯是他的标志，运气和胆识一样离谱。</p>
+                    <p class="char-perks"><span>专属技能</span>人之勇气 · 并行进展 · 未雨绸缪</p>
+                    <p class="char-tip">💡 被打不慌、扶人更快，硬核牵制。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="机动">
+                <img class="card-img" src="./images/portraits/木村唯.png" alt="木村唯">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">机动</span>
+                    </div>
+                    <h3>木村唯 <small>Yui Kimura</small></h3>
+                    <p class="char-desc">桀骜不驯的街头赛车手，在男车手林立的世界里杀出重围，速度与胆魄兼具。</p>
+                    <p class="char-perks"><span>专属技能</span>不惜一切 · 幸运喘息 · 挣脱激励</p>
+                    <p class="char-tip">💡 受伤更稳、板子反复利用，溜鬼韧性足。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="救人">
+                <img class="card-img" src="./images/portraits/扎里娜·卡西尔.png" alt="扎里娜·卡西尔">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">救人</span>
+                    </div>
+                    <h3>扎里娜·卡西尔 <small>Zarina Kassir</small></h3>
+                    <p class="char-desc">追求真相的纪录片导演，为揭露不公而屡陷险境，正义感是她的动力。</p>
+                    <p class="char-perks"><span>专属技能</span>舍己为人 · 转移注意 · 非正式调查</p>
+                    <p class="char-tip">💡 舍命救人+隐蔽行踪，救人位优选。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="授权" data-role="救人">
+                <img class="card-img" src="./images/portraits/谢丽尔·梅森.png" alt="谢丽尔·梅森">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">授权</span>
+                        <span class="tag tag-role">救人</span>
+                    </div>
+                    <h3>谢丽尔·梅森 <small>Cheryl Mason</small></h3>
+                    <p class="char-desc">来自《寂静岭》的少女，在表里世界的恐怖中寻找真相，意志坚定。</p>
+                    <p class="char-perks"><span>专属技能</span>压抑同盟 · 灵魂守卫 · 鲜血契约</p>
+                    <p class="char-tip">💡 恩赐与联动丰富，倒地也有一战之力。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="信息">
+                <img class="card-img" src="./images/portraits/菲力克斯·里克特.png" alt="菲力克斯·里克特">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">信息</span>
+                    </div>
+                    <h3>菲力克斯·里克特 <small>Felix Richter</small></h3>
+                    <p class="char-desc">才华横溢的建筑师，用理性的眼光审视世界，也把这份严谨带进求生。</p>
+                    <p class="char-perks"><span>专属技能</span>经久耐用 · 绝境对策 · 远见卓识</p>
+                    <p class="char-tip">💡 道具续航+修机视野，全能型选手。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="牵制">
+                <img class="card-img" src="./images/portraits/伊洛迪·拉科托.png" alt="伊洛迪·拉科托">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">牵制</span>
+                    </div>
+                    <h3>伊洛迪·拉科托 <small>Élodie Rakoto</small></h3>
+                    <p class="char-desc">追寻神秘学与失落文明的研究者，好奇心驱使她深入迷雾。</p>
+                    <p class="char-perks"><span>专属技能</span>兵不厌诈 · 强力挣扎 · 明察秋毫</p>
+                    <p class="char-tip">💡 挣扎反击+净化图腾，反制能力出色。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="信息">
+                <img class="card-img" src="./images/portraits/李允珍.png" alt="李允珍">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">信息</span>
+                    </div>
+                    <h3>李允珍 <small>Yun-Jin Lee</small></h3>
+                    <p class="char-desc">精明干练的音乐制作人，为名利不择手段，却在迷雾中重新审视自己。</p>
+                    <p class="char-perks"><span>专属技能</span>成功捷径 · 自我保护 · 轰动演出</p>
+                    <p class="char-tip">💡 砸晕屠夫+隐蔽自保，攻守兼具。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="授权" data-role="牵制">
+                <img class="card-img" src="./images/portraits/吉尔·瓦伦蒂安.png" alt="吉尔·瓦伦蒂安">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">授权</span>
+                        <span class="tag tag-role">牵制</span>
+                    </div>
+                    <h3>吉尔·瓦伦蒂安 <small>Jill Valentine</small></h3>
+                    <p class="char-desc">来自《生化危机》的S.T.A.R.S.精英，与生化恐怖斗争多年，冷静果敢。</p>
+                    <p class="char-perks"><span>专属技能</span>东山再起 · 反制之力 · 爆炸地雷</p>
+                    <p class="char-tip">💡 炸弹反击+快速恢复，反杀能力强。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="授权" data-role="牵制">
+                <img class="card-img" src="./images/portraits/里昂·斯科特·肯尼迪.png" alt="里昂·斯科特·肯尼迪">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">授权</span>
+                        <span class="tag tag-role">牵制</span>
+                    </div>
+                    <h3>里昂·斯科特·肯尼迪 <small>Leon S. Kennedy</small></h3>
+                    <p class="char-desc">来自《生化危机》的警员，从菜鸟一路成长为传奇特工，身手了得。</p>
+                    <p class="char-perks"><span>专属技能</span>咬紧牙关 · 新人精神 · 闪光弹</p>
+                    <p class="char-tip">💡 闪光弹控场+静音治疗，全能特工。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="治疗">
+                <img class="card-img" src="./images/portraits/米凯拉·里德.png" alt="米凯拉·里德">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">治疗</span>
+                    </div>
+                    <h3>米凯拉·里德 <small>Mikaela Reid</small></h3>
+                    <p class="char-desc">痴迷占卜与超自然的咖啡师，用神秘学力量庇护队友。</p>
+                    <p class="char-perks"><span>专属技能</span>恩赐：治疗之环 · 恩赐：暗影步 · 千里眼</p>
+                    <p class="char-tip">💡 恩赐图腾开创者，群体治疗与潜行兼备。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="信息">
+                <img class="card-img" src="./images/portraits/约拿·巴斯克斯.png" alt="约拿·巴斯克斯">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">信息</span>
+                    </div>
+                    <h3>约拿·巴斯克斯 <small>Jonah Vasquez</small></h3>
+                    <p class="char-desc">擅长解密的密码学专家，用数学逻辑破解迷雾的秘密。</p>
+                    <p class="char-perks"><span>专属技能</span>矫正措施 · 克服难关 · 恩赐：指数增长</p>
+                    <p class="char-tip">💡 修机提速+倒地自起，团队节奏发动机。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="授权" data-role="治疗">
+                <img class="card-img" src="./images/portraits/浅川洋一.png" alt="浅川洋一">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">授权</span>
+                        <span class="tag tag-role">治疗</span>
+                    </div>
+                    <h3>浅川洋一 <small>Yoichi Asakawa</small></h3>
+                    <p class="char-desc">来自《午夜凶铃》的灵能力者，从诅咒中幸存并掌握超自然力量。</p>
+                    <p class="char-perks"><span>专属技能</span>感同身受 · 亡父警言 · 恩赐：黑暗理论</p>
+                    <p class="char-tip">💡 恩赐群体加速+快速治疗，支援核心。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="信息">
+                <img class="card-img" src="./images/portraits/哈迪·考尔.png" alt="哈迪·考尔">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">信息</span>
+                    </div>
+                    <h3>哈迪·考尔 <small>Haddie Kaur</small></h3>
+                    <p class="char-desc">灵异调查记者，常年出入超自然现场，对未知世界了如指掌。</p>
+                    <p class="char-perks"><span>专属技能</span>余光长存 · 内在专注 · 急于求成</p>
+                    <p class="char-tip">💡 气场与修机信息丰富，局势掌控者。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="授权" data-role="信息">
+                <img class="card-img" src="./images/portraits/艾达·王.png" alt="艾达·王">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">授权</span>
+                        <span class="tag tag-role">信息</span>
+                    </div>
+                    <h3>艾达·王 <small>Ada Wong</small></h3>
+                    <p class="char-desc">来自《生化危机》的神秘特工，身份成谜、身手不凡，永远留有后手。</p>
+                    <p class="char-perks"><span>专属技能</span>窃听器 · 低调行事 · 对策治疗</p>
+                    <p class="char-tip">💡 监听屠夫+静音低调，情报型特工。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="授权" data-role="治疗">
+                <img class="card-img" src="./images/portraits/蕾贝卡·钱伯斯.png" alt="蕾贝卡·钱伯斯">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">授权</span>
+                        <span class="tag tag-role">治疗</span>
+                    </div>
+                    <h3>蕾贝卡·钱伯斯 <small>Rebecca Chambers</small></h3>
+                    <p class="char-desc">来自《生化危机》的天才医疗兵，温柔而坚强，专业救护能力一流。</p>
+                    <p class="char-perks"><span>专属技能</span>聚精会神 · 焕然一新 · 定心丸</p>
+                    <p class="char-tip">💡 治疗提速+增益丰富，团队医疗担当。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="信息">
+                <img class="card-img" src="./images/portraits/维托里奥·托斯卡诺.png" alt="维托里奥·托斯卡诺">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">信息</span>
+                    </div>
+                    <h3>维托里奥·托斯卡诺 <small>Vittorio Toscano</small></h3>
+                    <p class="char-desc">穿越数个世纪的古老学者，掌握失传的神秘学知识。</p>
+                    <p class="char-perks"><span>专属技能</span>迷雾慧眼 · 潜力无限 · 快速策略</p>
+                    <p class="char-tip">💡 气场透视+恢复提速，视野型角色。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="团队">
+                <img class="card-img" src="./images/portraits/塔丽塔·莱拉.png" alt="塔丽塔·莱拉">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">团队</span>
+                    </div>
+                    <h3>塔丽塔·莱拉 <small>Thalita Lyra</small></h3>
+                    <p class="char-desc">巴西街头艺术家，乐观开朗，用热情感染身边每一个人。</p>
+                    <p class="char-perks"><span>专属技能</span>团队合作：二人之力 · 友谊赛 · 当机立断</p>
+                    <p class="char-tip">💡 双人联动加速，团队型支援。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="团队">
+                <img class="card-img" src="./images/portraits/雷纳托·莱拉.png" alt="雷纳托·莱拉">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">团队</span>
+                    </div>
+                    <h3>雷纳托·莱拉 <small>Renato Lyra</small></h3>
+                    <p class="char-desc">塔丽塔的弟弟，冷静内敛的战术头脑，善于规划与配合。</p>
+                    <p class="char-perks"><span>专属技能</span>团队合作：全体隐蔽 · 幕后玩家 · 滴血冲刺</p>
+                    <p class="char-tip">💡 团队潜行+救人加速，策略型辅助。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="原创" data-role="牵制">
+                <img class="card-img" src="./images/portraits/加布里埃尔·索马.png" alt="加布里埃尔·索马">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">原创</span>
+                        <span class="tag tag-role">牵制</span>
+                    </div>
+                    <h3>加布里埃尔·索马 <small>Gabriel Soma</small></h3>
+                    <p class="char-desc">来自未来的工程师，携先进科技穿越时空进入迷雾。</p>
+                    <p class="char-perks"><span>专属技能</span>为生而生 · 清道夫 · 答疑解惑</p>
+                    <p class="char-tip">💡 受伤加速+道具补给，硬核牵制。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="授权" data-role="机动">
+                <img class="card-img" src="./images/portraits/尼古拉斯·凯奇.png" alt="尼古拉斯·凯奇">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">授权</span>
+                        <span class="tag tag-role">机动</span>
+                    </div>
+                    <h3>尼古拉斯·凯奇 <small>Nicolas Cage</small></h3>
+                    <p class="char-desc">好莱坞传奇影星，以本色出演进入迷雾，浮夸又无所畏惧。</p>
+                    <p class="char-perks"><span>专属技能</span>即兴表演 · 联袂主演 · 跌宕剧情</p>
+                    <p class="char-tip">💡 随机增益+倒地回血，充满戏剧性。</p>
+                </div>
+            </div>
+
+            <div class="card char-card" data-faction="授权" data-role="牵制">
+                <img class="card-img" src="./images/portraits/艾伦·雷普利.png" alt="艾伦·雷普利">
+                <div class="card-content">
+                    <div class="char-tags">
+                        <span class="tag tag-faction">授权</span>
+                        <span class="tag tag-role">牵制</span>
+                    </div>
+                    <h3>艾伦·雷普利 <small>Ellen Ripley</small></h3>
+                    <p class="char-desc">来自《异形》的传奇女英雄，与异形的战斗锻造了她的钢铁意志。</p>
+                    <p class="char-perks"><span>专属技能</span>化学陷阱 · 幸运星 · 轻盈猫步</p>
+                    <p class="char-tip">💡 陷阱反制+静音潜行，经验丰富的幸存者。</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        本网站为爱好者学习制作，黎明杀机版权归 Behaviour Interactive 所有
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img class="lightbox-img" id="lightboxImg" src="" alt="图片预览">
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
